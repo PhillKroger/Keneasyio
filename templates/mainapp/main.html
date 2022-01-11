@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+<title>{% block title %}mainapp{% endblock %}</title>
+
+{% block content %}
+
+    {% for product in products %}
+        <div class="all-products", style="float: left;">
+            <p class="product-element">{{ product.category_season }} {{ product.category_clothes }} {{ product.category_price }} {{ product.category_size }} {{ product.color }}</p>
+        </div>
+    {% endfor %}
+
+{% endblock %}
