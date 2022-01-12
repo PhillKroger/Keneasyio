@@ -3,11 +3,49 @@
 <title>{% block title %}mainapp{% endblock %}</title>
 
 {% block content %}
+    <!--
+    <form action="" method="get">
+        <input name="s" placeholder="Season" type="search">
+        <input name="s" placeholder="Price" type="search">
+        <input name="s" placeholder="Size" type="search">
+        <input name="s" placeholder="Clothes Category" type="search">
+        <button type="submit">Set</button>
+    </form>
+    -->
+    <!--
+    <form action = {% url 'users:index' %} method="get">
+    {% csrf_token %}
+        <div class="d-flex justify-content-center">
+            <div>
+                <input class="form-control" type="text" name="search"
+                       placeholder="Search a user...">
+            </div>
+            <div>
+                <button class="btn btn-dark" type="submit" name="action">Search</button>
+            </div>
+        </div>
+    </form>
+    -->
 
+    <!--
     {% for product in products %}
         <div class="all-products", style="float: left;">
             <p class="product-element">{{ product.category_season }} {{ product.category_clothes }} {{ product.category_price }} {{ product.category_size }} {{ product.color }}</p>
         </div>
     {% endfor %}
+    -->
 
+    <form action = {% url 'products:index' %} method="GET">
+    {% csrf_token %}
+
+        <div class="d-flex justify-content-center">
+            <div>
+                <input class="form-control" type="text" name="search"
+                       placeholder="Search a user...">
+            </div>
+            <div>
+                <button class="btn btn-dark" type="submit" name="action">Search</button>
+            </div>
+        </div>
+</form>
 {% endblock %}

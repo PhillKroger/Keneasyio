@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load bootstrap %}
+{% block title %}{% endblock title %}
+{% block content %}
+    <form method="GET">
+    {{ filter.form }}
+    <button type="submit" >Search</button>
+</form>
+{% if filter.qs %}
+    <ul>
+    {% for product in filter.qs %}
+        <li>{{ product.category_season }} {{ product.category_price }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No users available.</p>
+{% endif %}
+{% endblock content %}
