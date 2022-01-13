@@ -27,7 +27,8 @@ class ProductListView(ListView):
         if query:
             return Product.objects.filter(name__icontains=query)
         else:
-            return Product.objects.all() # or .none() depending on what you want to show
+            return Product.objects.all()
+        # or .none() depending on what you want to show
 
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -43,6 +44,8 @@ def results_view(request):
         'results': results,
         'query': query
     })
+
+
 """
 def news(request):
     posts = Post.objects.all().order_by('-id')[:5]
@@ -54,6 +57,5 @@ def news(request):
         post_list = paginator.page(1)
     except EmptyPage:
         post_list = paginator.page(paginator.num_pages)
-
     return render(request, 'posts/news.html', {'posts': post_list})
 """

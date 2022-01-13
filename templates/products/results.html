@@ -1,10 +1,15 @@
 {% extends 'base.html' %}
 {% load bootstrap %}
-{% block title %}{% endblock title %}
+<title>
+    {% block title %}
+        products-results
+    {% endblock title %}
+</title>
+
 {% block content %}
-
-<form>
-    <input name="query" value="{% if query %}{{ query }}{% endif %}" />
-</form>
-
+    <form>
+        <label>
+            <input name="query" value="{% if query %}{{ query }}{% endif %}"/>
+        </label>
+    </form>
 {% endblock %}
