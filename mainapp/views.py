@@ -26,6 +26,25 @@ class ProductListView(ListView):
         # Book.objects.all().aggregate(Avg('price'))
         # {'price__avg': 34.35}
 
+
+        """
+         a = [10, 20 ,30 ,40 ,50 ,60 ,70 ,80, 90]
+        b = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        c = [2, 4, 8, 10, 12, 14, 16, 18]
+        d = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
+        f = 35
+        k = 0
+        for q in range(len(a)-1):
+          for w in range(len(b)-1):
+            for e in range(len(c)-1):
+              for r in range(len(d)-1):
+                if (a[q] + b[w] + c[e] + d[r]) <= f:
+                  k+= 1
+                  print(a[q], b[w], c[e], d[r])
+        print(k)
+        """
+
+
         if query:
             pn = Product.objects.filter(name__icontains=query)
             return pn
