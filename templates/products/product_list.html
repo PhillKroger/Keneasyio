@@ -10,7 +10,6 @@
 {% block content %}
     <form method="GET">
         {{ filter.form }}
-
         <button type="submit" >Search</button>
     </form>
     {% if filter.qs %}
@@ -22,4 +21,6 @@
     {% else %}
         <p>No product</p>
     {% endif %}
+
+
 {% endblock content %}

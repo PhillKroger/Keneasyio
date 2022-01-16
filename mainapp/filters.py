@@ -7,4 +7,3 @@ class ProductFilter(filters.FilterSet):
         model = Product
         fields = ('category_season', 'category_size')
 
-

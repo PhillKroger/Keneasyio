@@ -60,3 +60,4 @@ class Product(models.Model):
 
     def __str__(self):
         return '{} {} {} {} {}'.format(self.slug, self.category_season, self.category_clothes, self.category_size, self.category_price)
+

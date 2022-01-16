@@ -1,7 +1,5 @@
 from django.contrib.auth.models import User
-from django.shortcuts import render, get_object_or_404
-from django.http import HttpResponse
-from django.urls import reverse
+from django.shortcuts import render
 from django.views.generic import ListView
 from .filters import ProductFilter
 from .models import Product
@@ -19,23 +17,33 @@ class ProductListView(ListView):
     def get_queryset(self):
         query = self.request.GET.get('search')
         p = Product.objects.all()
+        l = []
+        for i in range(len(p)):
+            l.append(p[i])
+
         # Average price across all books.
         # from django.db.models import Avg
         # Book.objects.all().aggregate(Avg('price'))
         # {'price__avg': 34.35}
-        if query:
-            return Product.objects.filter(name__icontains=query)
-        else:
 
+        if query:
+            pn = Product.objects.filter(name__icontains=query)
+            return pn
+        else:
+            a = Product.objects.filter(
+                category_clothes__need_in_set=4
+            )
+            b = Product.objects.filter(
+                category_clothes__need_in_set=3
+            )
+            c = Product.objects.filter(
+                category_clothes__need_in_set=2
+            )
+            d = Product.objects.filter(
+                category_clothes__need_in_set=1
+            )
             return p
 
-
-
-
-
-
-            # .none()
-        # or  depending on what you want to show
 
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -51,18 +59,3 @@ def results_view(request):
         'results': results,
         'query': query
     })
-
-
-"""
-def news(request):
-    posts = Post.objects.all().order_by('-id')[:5]
-    page = request.GET.get('page', 1)
-    paginator = Paginator(posts, 20)
-    try:
-        post_list = paginator.page(page)
-    except PageNotAnInteger:
-        post_list = paginator.page(1)
-    except EmptyPage:
-        post_list = paginator.page(paginator.num_pages)
-    return render(request, 'posts/news.html', {'posts': post_list})
-"""
