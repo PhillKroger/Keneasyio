@@ -13,10 +13,11 @@ class CategorySeason(models.Model):
 
 class CategoryClothes(models.Model):
     name = models.CharField(max_length=255, verbose_name='category_clothes_name')
+    need_in_set = models.IntegerField(verbose_name='weight_in_set', null=True, default=0)
     slug = models.SlugField(unique=True, null=True)
 
     def __str__(self):
-        return self.name
+        return "{} {}".format(self.name, self.need_in_set)
 
 
 class CategorySize(models.Model):

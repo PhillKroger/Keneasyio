@@ -8,13 +8,7 @@ from .models import Product
 
 
 def mainapp(request):
-    """
-    context = {
-        'products': Product.objects.all()
-    }
-    """
     return render(request, "mainapp/main.html")
-# context
 
 
 class ProductListView(ListView):
@@ -24,11 +18,24 @@ class ProductListView(ListView):
 
     def get_queryset(self):
         query = self.request.GET.get('search')
+        p = Product.objects.all()
+        # Average price across all books.
+        # from django.db.models import Avg
+        # Book.objects.all().aggregate(Avg('price'))
+        # {'price__avg': 34.35}
         if query:
             return Product.objects.filter(name__icontains=query)
         else:
-            return Product.objects.all()
-        # or .none() depending on what you want to show
+
+            return p
+
+
+
+
+
+
+            # .none()
+        # or  depending on what you want to show
 
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super().get_context_data(**kwargs)

@@ -1,3 +1,4 @@
+
 {% extends 'base.html' %}
 {% load bootstrap %}
 <title>
@@ -9,12 +10,13 @@
 {% block content %}
     <form method="GET">
         {{ filter.form }}
+
         <button type="submit" >Search</button>
     </form>
     {% if filter.qs %}
         <ul>
         {% for product in filter.qs %}
-            <li>{{ product.category_season }} {{ product.category_price }}</li>
+            <li>{{ product.category_season }} {{ product.category_price }} {{ product.category_clothes }} {{ product.category_size }} {{ product.color }}</li>
         {% endfor %}
         </ul>
     {% else %}
