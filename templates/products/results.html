@@ -7,9 +7,8 @@
 </title>
 
 {% block content %}
-    <form>
-        <label>
-            <input name="query" value="{% if query %}{{ query }}{% endif %}"/>
-        </label>
+    <form method="GET">
+        {{ filter_set.form }}
+        <button type="submit" >Search...</button>
     </form>
 {% endblock %}

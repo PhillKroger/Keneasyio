@@ -1,15 +1,82 @@
 body {
-    background-color: #2c2f33;
+    background-color: #e3e3e3;
 }
 
-.product-element {
+@import url(
+    http://fonts.googleapis.com/css?family=Lato:400,700italic
+);
+
+* { padding: 0; margin: 0; }
+body { background: #ffffff; font-family: 'Lato', sans-serif; text-transform: uppercase; letter-spacing: 1px;}
+
+header {
+    text-align: justify;
+    height: 8em;
+    padding: 2em 5%;
+    background: #cddeff;
     font-family: 'Comfortaa', cursive;
-    color: white;
+    color: #516BEB;
 }
 
-.all-products {
-    background-color: #212122;
-    border-radius: 20px;
-    padding: 20px;
-    margin: 20px;
+header::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+.header-nav-a {
+    text-align: justify;
+    text-decoration: none;
+    font-family: 'Comfortaa', cursive;
+    color: #516BEB;
+    padding-left: 30px;
+}
+
+header > div,
+header > div::before,
+header nav,
+header > div h1 {
+    font-family: 'Comfortaa', cursive;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+}
+
+header > div {
+    height: 100%;
+}
+
+header > div::before {
+    content: '';
+    height: 100%;
+}
+
+header > div h1 {
+    font-size: 5em;
+    font-style: italic;
+}
+
+header nav a {
+    white-space: nowrap;
+}
+
+header nav a:last-child {
+    padding-right: 0;
+}
+
+@media screen and (max-width: 720px){
+
+    header {
+        height: auto;
+    }
+
+    header > div,
+    header > div h1,
+    header nav {
+        height: auto;
+        width: auto;
+        display: block;
+        text-align: center;
+    }
+
 }
