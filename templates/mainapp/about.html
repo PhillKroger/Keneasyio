@@ -1,10 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% load bootstrap %}
 
-</body>
-</html>
+<title>
+    {% block title %}
+        about
+    {% endblock title %}
+</title>
+
+{% block content %}
+
+    {% include 'menu.html' %}
+
+{% endblock content %}

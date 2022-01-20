@@ -1,0 +1,416 @@
+
+    body {
+        background: #F8F8F8 !important;
+    }
+
+    .nav {
+        border-radius: 0px !important;
+        padding: 10px 0 10px 0 !important;
+        background-color: #5f84f3 !important;
+    }
+
+    .mb-7 {
+        margin-bottom: 7px !important;
+    }
+
+    .mt-5 {
+        margin-top: 5px !important;
+    }
+
+    .mymodal {
+        height: 800px !important;
+        top: 200px !important;
+        font-size: 20px !important;
+    }
+
+    .mb-5 {
+        margin-bottom: 0px !important;
+    }
+
+    .w-big {
+        width: 200px !important;
+    }
+
+    .bwhite-lg {
+        background-color: transparent !important;
+    }
+
+    .bwhite-sm {
+        background-color: transparent !important;
+        width: 10px !important;
+    }
+
+    .comment-box {
+        display: none;
+    }
+
+    .name-comp {
+        color: white;
+    }
+
+    .home-btn {
+        color: white;
+    }
+
+    .your-name {
+        color: white;
+    }
+
+    .logout {
+        color: white;
+    }
+
+    .header {
+        background-color: #7C83FD;
+        padding-bottom: 30px;
+        width: 100%;
+        height: 100%;
+        left: 50%;
+    }
+
+    ul {
+        padding-top: 20px;
+        text-align: left;
+        list-style: none;
+    }
+
+    li {
+        display: inline-block;
+        font-family: 'Fira Sans', sans-serif;
+        text-decoration: none;
+        color: #f6f6f6;
+        padding-right: 50px;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: #f6f6f6;
+    }
+
+    .logo {
+        float: left;
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+
+    .user-nav {
+        padding-right: 5px;
+    }
+
+    .user-nav a {
+        text-decoration: none;
+        color: #f6f6f6;
+    }
+
+
+    .username-nav {
+        float: left;
+    }
+
+    .avatar-nav {
+        float: left;
+    }
+
+    .form-post {
+        background-color: #f8f8f8;
+        padding: 10px;
+        margin: 20px;
+        border-radius: 30px;
+    }
+
+    .logout-button {
+        background-color: #8aabfa;
+        border-radius: 10px;
+        color: #F8F8F8;
+        box-shadow: 0 0 20px #99d5ff;
+        border-radius: 8px;
+        padding: 10px;
+    }
+
+    html {
+        scroll-behavior: smooth;
+   }
+
+   body {
+    margin: 0;
+   }
+
+   section {
+    border-radius: 30px;
+    height: 50vh;
+    padding: 40px;
+   }
+   section h2 {
+    color: #fff; /* Цвет текста */
+   }
+
+   #page1 { background: #FFDB8A; }
+   #page2 { background: #8350b6;}
+   #page3 { background: #79b0d7;}
+   #page4 { background: #C898AE; }
+
+    .first {
+        padding-bottom: 150px;
+        margin-bottom: 100px;
+    }
+
+    .first-text {
+        text-decoration: none;
+        font-size: 60px;
+        padding-top: 40px;
+        font-family: 'Comfortaa', cursive;
+    }
+
+    .second-text {
+        font-size: 40px;
+    }
+
+    .second-text-block {
+        padding-bottom: 200px;
+    }
+
+    .word-1 {
+        color: #7C83FD;
+    }
+
+    .photo-first-page {
+        padding-right: 40px;
+        float: left;
+    }
+
+    .photo-first1-page {
+        float: left;
+
+        margin-right: 100px;
+    }
+
+    .photo-second-page {
+        float: right;
+    }
+
+    .photo-second2-page {
+        float: right;
+        margin-bottom: 100px;
+        border-bottom-left-radius: 30px;
+    }
+
+    .second-text-block {
+        float: left;
+        font-size: 4px;
+        color: #333333;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    hr {
+        color: #7C83FD;
+        width: 400px;
+        height: 5px;
+    }
+
+    .third {
+        margin-bottom: 0px;
+    }
+
+    .third-text {
+        font-size: 35px;
+        padding-right: 30px;
+        font-family: 'Comfortaa', cursive;
+        color: #eaeaea;
+    }
+
+    .konkurs {
+        background-color: #de1270;
+        padding: 10px;
+        border-radius: 10px;
+        float: left;
+        color: #F8F8F8;
+        margin: 10px;
+        box-shadow: 0 0 30px #e346bc;
+    }
+
+    .f-block-info {
+        font-size: 30px;
+    }
+
+    footer {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        background-color: #7C83FD;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .foot-el {
+        font-family: 'Montserrat', sans-serif;
+        float: left;
+        color: #F8F8F8;
+        padding-left: 30px;
+    }
+
+    .foot-logo {
+        float: right;
+        margin-bottom: 80px;
+    }
+
+    @media all and (max-width: 1200px) {
+
+        .first-text {
+            text-decoration: none;
+            font-size: 40px;
+            padding-top: 65px;
+        }
+
+        .photo-first-page {
+            padding-right: 40px;
+            float: left;
+            width: 600px;
+        }
+
+        .second-text-block {
+            float: left;
+            font-size: 38px;
+            color: #333333;
+            font-family: 'Montserrat', sans-serif;
+
+        }
+
+        .photo-second-page {
+            float: right;
+            width: 600px;
+        }
+
+        .photo-first1-page {
+            float: left;
+            padding-right: 20px;
+            margin-right: 30px;
+            width: 370px;
+        }
+
+        .photo-second2-page {
+            float: right;
+            margin-bottom: 0px;
+            border-radius: 30px;
+            width: 450px;
+        }
+
+        .f-block-info {
+            font-size: 25px;
+        }
+    }
+
+    @media all and (max-width: 1000px) {
+        .photo-first-page {
+            padding-right: 40px;
+            float: left;
+            width: 500px;
+        }
+
+        .first-text {
+            text-decoration: none;
+            font-size: 30px;
+            padding-top: 40px;
+        }
+
+        .photo-second-page {
+            float: right;
+            width: 400px;
+        }
+
+        .photo-first1-page {
+            float: left;
+            padding-right: 20px;
+            margin-right: 30px;
+            width: 300px;
+        }
+
+        .third-text {
+            font-size: 25px;
+            padding-right: 30px;
+        }
+
+        .konkurs {
+            background-color: #de1270;
+            padding: 7px;
+            border-radius: 10px;
+            float: left;
+            color: #F8F8F8;
+            margin-top: 20px;
+            box-shadow: 0 0 40px #e346bc;
+        }
+
+    }
+
+    @media all and (max-width: 770px) {
+        .photo-first-page {
+            padding-right: 0px;
+            float: left;
+            width: 370px;
+        }
+
+        .first-text {
+            text-decoration: none;
+            font-size: 25px;
+            padding-top: 40px;
+        }
+
+        .photo-second-page {
+            float: right;
+            width: 300px;
+        }
+
+        .photo-first1-page {
+            float: left;
+            padding-right: 20px;
+            margin-right: 30px;
+            width: 260px;
+        }
+
+        .third-text {
+            font-size: 19px;
+            padding-right: 30px;
+        }
+
+        .konkurs {
+            background-color: #de1270;
+            padding: 10px;
+            border-radius: 10px;
+            float: left;
+            color: #F8F8F8;
+            margin: 20px;
+            box-shadow: 0 0 40px #e346bc;
+        }
+
+        .second-text-block {
+            float: left;
+            font-size: 28px;
+            color: #333333;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .photo-second2-page {
+            float: right;
+            border-radius: 30px;
+            width: 300px;
+        }
+
+        .f-block-info {
+            font-size: 20px;
+        }
+
+        .first {
+            margin-top: 100px;
+        }
+    }
+
+    @media all and (max-width: 550px) {
+    }
+
+    @media all and (max-width: 475px) {
+    }
+
+    @media all and (max-width: 400px) {
+    }
+
+    @media all and (max-width: 320px) {
+    }
