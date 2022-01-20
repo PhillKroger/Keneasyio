@@ -1,4 +1,4 @@
-# Keneasy.io
+# Keneasy.io 
 ```
 This project solves the problem of a long search for clothes
 for the next season or event. Due to ready-made sets of parameters,
