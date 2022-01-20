@@ -11,7 +11,7 @@ def mainapp(request):
 
 class ProductListView(ListView):
     model = Product
-    template_name = 'products/product_list.html'
+    template_name = 'products/filter.html'
 
     def get_queryset(self):
         query = self.request.GET.get('search')
@@ -19,8 +19,6 @@ class ProductListView(ListView):
 
         if query:
             pn = Product.objects.filter(name__icontains=query)
-            q = list(Product.objects.filter(name__icontains=query))
-            print(q)
             return pn
         else:
             return p
@@ -32,6 +30,7 @@ class ProductListView(ListView):
         return context
 
 
+"""
 def results_view(request):
     results = []
     query = request.GET.get('query')
@@ -39,3 +38,4 @@ def results_view(request):
         'results': results,
         'query': query
     })
+"""

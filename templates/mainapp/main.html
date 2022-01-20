@@ -1,23 +1,15 @@
-{% extends "base.html" %}
+
+{% extends 'base.html' %}
+{% load bootstrap %}
 
 <title>
     {% block title %}
-        mainapp
-    {% endblock %}
+        mainpage
+    {% endblock title %}
 </title>
 
 {% block content %}
-    <form action = {% url 'products:index' %} method="GET">
-    {% csrf_token %}
-        <div class="d-flex justify-content-center">
-            <div>
-                <label>
-                    <input class="form-control" type="text" name="search" placeholder="Search a user...">
-                </label>
-            </div>
-            <div>
-                <button class="btn btn-dark" type="submit" name="action">Search</button>
-            </div>
-        </div>
-    </form>
-{% endblock %}
+
+    {% include 'menu.html' %}
+
+{% endblock content %}

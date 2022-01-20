@@ -11,14 +11,15 @@
 {% block content %}
 
     <header>
-        <h1>Keneasyio</h1><br>
+        <h1 style="float: left;">Keneasy</h1><h1 class="header-h1-io">io</h1><br>
+
         <nav>
-            <a href="https://colorhunt.co/" class="header-nav-a">HOME</a>
+            <a href="http://127.0.0.1:8000/" class="header-nav-a">HOME</a>
             <a href="https://colorhunt.co/" class="header-nav-a">PROFILE</a>
             <a href="https://colorhunt.co/" class="header-nav-a">FILTER CLOTHES</a>
         </nav>
     </header>
-
+    <br><br>
     <form method="GET">
         {{ filter.form }}
         <button type="submit" >Search</button>

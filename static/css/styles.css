@@ -11,17 +11,21 @@ body { background: #ffffff; font-family: 'Lato', sans-serif; text-transform: upp
 
 header {
     text-align: justify;
-    height: 8em;
+    height: 5em;
     padding: 2em 5%;
     background: #cddeff;
     font-family: 'Comfortaa', cursive;
     color: #516BEB;
 }
 
+.header-h1-io {
+    color: cornflowerblue;
+}
+
 header::after {
     content: '';
     display: inline-block;
-    width: 100%;
+    width: 90%;
 }
 
 .header-nav-a {
@@ -29,7 +33,7 @@ header::after {
     text-decoration: none;
     font-family: 'Comfortaa', cursive;
     color: #516BEB;
-    padding-left: 30px;
+    padding-left: 10px;
 }
 
 header > div,
@@ -43,12 +47,12 @@ header > div h1 {
 }
 
 header > div {
-    height: 100%;
+    height: 90%;
 }
 
 header > div::before {
     content: '';
-    height: 100%;
+    height: 80%;
 }
 
 header > div h1 {
