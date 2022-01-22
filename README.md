@@ -7,7 +7,6 @@ the user will be able to quickly buy clothes without losing money
 
 The essence of the project: ready-made clothing sets created according to user parameters
 ```
-© 2022 Keneasy.io 
 
 © All rights reserved
 
