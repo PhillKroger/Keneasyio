@@ -88,9 +88,9 @@
     }
 
     .logo {
-        float: left;
-        margin-left: 5px;
-        margin-top: 5px;
+        float: right;
+        margin-left: 50px;
+        margin-top: 0px;
     }
 
     .user-nav {
@@ -101,7 +101,6 @@
         text-decoration: none;
         color: #f6f6f6;
     }
-
 
     .username-nav {
         float: left;
@@ -118,11 +117,11 @@
         border-radius: 30px;
     }
 
-    .logout-button {
+    .↔logout-button {
         background-color: #8aabfa;
         border-radius: 10px;
         color: #F8F8F8;
-        box-shadow: 0 0 20px #99d5ff;
+
         border-radius: 8px;
         padding: 10px;
     }
