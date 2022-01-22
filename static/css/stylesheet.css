@@ -3,6 +3,10 @@
         background: #F8F8F8 !important;
     }
 
+    .about-1 {
+        padding-left: 50px;
+    }
+
     .nav {
         border-radius: 0px !important;
         padding: 10px 0 10px 0 !important;
@@ -237,14 +241,16 @@
         border-bottom-left-radius: 20px;
         background-color: #7C83FD;
         padding-top: 100px;
+        color: #8aabfa;
+        font-family: 'Comfortaa', cursive;
         padding-bottom: 100px;
     }
 
     .foot-el {
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Comfortaa', cursive;
         float: left;
-        color: #F8F8F8;
-        padding-left: 30px;
+        color: #8aabfa;
+        padding-left: 20px;
     }
 
     .foot-logo {

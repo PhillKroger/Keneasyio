@@ -1,7 +1,11 @@
 
 {% extends 'base.html' %}
 {% load bootstrap %}
-
+<style>
+    .about-1 {
+        padding-left: 50px;
+    }
+</style>
 <title>
     {% block title %}
         Keneasyio - about
@@ -11,5 +15,16 @@
 {% block content %}
 
     {% include 'menu.html' %}
+    <br><br>
+    <div class="about-1" style="padding-left: 20%;padding-right: 20%;font-family: 'Comfortaa', cursive;">
+        <h3>Keneasyio</h3>
+        <p>Этот проект создан с целью создать удобный фильтр одежды и создания сета по параметрам.
+        Пользователь вводит три параметра поиска элемента одежды и алгоритм фильтрует все имеющиеся элементы одежды в базе данных.
+        Воспользоваться фильтром одежды можно в разделе #filter</p>
+        <p>Back-end: Python | Front-end: html, css</p>
+        <code>
 
+        </code>
+        <p><a href="https://github.com/PhillKroger/Keneasyio">Репозиторий проекта на (github)</a></p>
+    </div>
 {% endblock content %}
