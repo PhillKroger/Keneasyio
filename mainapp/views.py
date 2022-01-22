@@ -31,14 +31,3 @@ class ProductListView(ListView):
         context = super().get_context_data(**kwargs)
         context['filter'] = ProductFilter(self.request.GET, queryset=self.get_queryset())
         return context
-
-
-"""
-def results_view(request):
-    results = []
-    query = request.GET.get('query')
-    return render(request, 'products/results.html', {
-        'results': results,
-        'query': query
-    })
-"""
