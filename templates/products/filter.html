@@ -4,7 +4,7 @@
 
 <title>
     {% block title %}
-        product_list
+        Keneasyio - filtering
     {% endblock title %}
 </title>
 
@@ -13,13 +13,12 @@
     {% include 'menu.html' %}
 
 
-    <br><br>
     <form method="GET">
         {{ filter.form }}
-        <button type="submit" >Search</button>
+        <button type="submit" >Filter</button>
     </form>
     {% if filter.qs %}
-        <table border="1">
+        <table>
         {% for product in filter.qs %}
             <tr>
                 <td>{{ product.category_season }}</td><td>{{ product.category_clothes }}</td><td>{{ product.category_size }}</td><td>{{ product.category_price }}</td>
@@ -27,7 +26,7 @@
         {% endfor %}
         </table>
     {% else %}
-        <p>No product</p>
+        <p>Ops... </p>
     {% endif %}
 
 
