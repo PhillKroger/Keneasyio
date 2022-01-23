@@ -30,6 +30,8 @@ class UserRegistrationForm(forms.ModelForm):
         label="Email", widget=forms.EmailInput(attrs={'class': 'register_email_form', 'id': 'register_form_email_label'}))
     username = forms.CharField(
         label="Username", widget=forms.TextInput(attrs={'class': 'register_username_form', 'id': 'register_form_username_label'}))
+    description = forms.CharField(
+        label="description", widget=forms.TextInput(attrs={'class': 'register_description_form', 'id': 'register_form_description_label'}))
     password = forms.CharField(
         label="Password", widget=forms.PasswordInput(attrs={'class': 'register_password_form', 'id': 'register_form_password_label'}))
     password2 = forms.CharField(
