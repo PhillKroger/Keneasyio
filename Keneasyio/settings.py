@@ -20,10 +20,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-1a#kt7))-k-zqn8gej#y05^7ibr-!4p57*hi^p84$ihsca7^b@'
 
-# SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 ALLOWED_HOSTS = []
 #ALLOWED_HOSTS = ['https://keneasyio.herokuapp.com/', '127.0.0.1']
@@ -42,7 +40,6 @@ INSTALLED_APPS = [
     'django_filters',
     'bootstrapform',
     'profiles'
-
 ]
 
 AUTH_USER_MODEL = 'profiles.User'
@@ -51,9 +48,7 @@ LOGIN_REDIRECT_URL = '/'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-
     # 'whitenoise.middleware.WhiteNoiseMiddleware',
-
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
