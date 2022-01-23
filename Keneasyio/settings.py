@@ -41,8 +41,13 @@ INSTALLED_APPS = [
     'mainapp',
     'django_filters',
     'bootstrapform',
+    'profiles'
 
 ]
+
+AUTH_USER_MODEL = 'profiles.User'
+
+LOGIN_REDIRECT_URL = '/'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

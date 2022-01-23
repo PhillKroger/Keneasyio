@@ -21,17 +21,26 @@
   </head>
   <body>
 
-    <div class="header">
 
+    <div class="header">
+        {% if request.user.is_authenticated %}
           <ul style="text-align: center;">
             <li><h4><a href="/" style="text-decoration: none;">home</a></h4></li>
             <li><h4><a href="http://127.0.0.1:8000/about/" style="text-decoration: none;">about</a></h4></li>
             <li><h4><a href="http://127.0.0.1:8000/filter/" style="text-decoration: none;">filter</a></h4></li>
-          <li>
-        <div class="user-nav">
-                <a href="" class="ui item">
-                    <h4 class="logout-button">logout</h4>
-                </a>
-        </div>
+            <li><h4><a href="{% url 'profiles:profile' %}" style="text-decoration: none;">profile</a></h4></li>
+            <li><h4><a href="{% url 'profiles:logout' %}" style="text-decoration: none;">logout</a></h4></li>
+
+              {% else %}
+                <ul style="text-align: center;">
+                <li><h4><a href="/" style="text-decoration: none;">home</a></h4></li>
+                <li><h4><a href="http://127.0.0.1:8000/about/" style="text-decoration: none;">about</a></h4></li>
+                <li><h4><a href="http://127.0.0.1:8000/filter/" style="text-decoration: none;">filter</a></h4></li>
+                <li><h4><a href="{% url 'profiles:login' %}" style="text-decoration: none;">sign in</a></h4></li>
+                <li><h4><a href="{% url 'profiles:register' %}" style="text-decoration: none;">sign up</a></h4></li>
+
+            {% endif %}
+
+
     </div>
   </body>

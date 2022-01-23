@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+<title>{% block title %}Create{% endblock %}</title>
+
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+{% block content %}
+
+    <div class="grey_page">
+		{% include 'menu.html' %}
+    </div>
+    <br><br><br><br>
+
+
+
+            <div class="post_form_div">
+                <h1 class="h1_post_create">Post creating</h1><br><br>
+                <form method="post">
+                    {% csrf_token %}
+                    {{form.media}}
+                    {{form.as_p}}
+                    <button type="submit" class="post_form_button"><p class="text_button">post</p></button>
+                </form>
+            </div>
+
+
+{% endblock %}

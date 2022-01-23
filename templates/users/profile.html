@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+<title>{% block title %}{{ user.username }}{% endblock %}</title>
+
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+{% block content %}
+
+    {% include 'menu.html' %}
+<div style="clear: left"></div>
+    <br>
+    <div class="main_div">
+    <img src="{{ user.avatar.url }}" class="profile_avatar_div" width="70px" style="border-radius: 0%;">
+      <h1 class="profile_username">{{ user.username }}</h1>
+        <p class="profile_description">{{ user.description }}</p>
+    </div>
+
+
+    <br><br><br><br>
+
+    {% for post in user_posts %}
+        <div class="profile_post">
+            <img class="profile_post_avatar_div" src="{{ user.avatar.url }}" width="70px" style="border-radius: 0%;">
+            <div class="profile_post_author_and_pubdate_div">
+                <a class="profile_post_author" href="{% url 'profiles:users' post.author.id %}">{{ post.author.username }}</a>
+            </div>
+            <div class="profile_post_text_div">
+                <div class="profile_post_text_div__inner">
+                    <p class="profile_post_text">{{ post.text|safe }}</p>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+
+{% endblock %}

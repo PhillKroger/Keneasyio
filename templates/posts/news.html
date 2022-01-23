@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+<title>{% block title %}News{% endblock %}</title>
+
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+{% block content %}
+
+    <div class="grey_page">
+		{% include 'menu.html' %}
+		<div style="clear: left"></div>
+	</div>
+
+    {% for post in posts %}
+        <div class="news_post">
+            <a class="news_post_author" href="{% url 'profiles:users' post.author.id %}">
+                <img class="profile_post_avatar_div" src="{{ user.avatar.url }}" width="100px" style="border-radius: 50%;">
+            </a>
+            <div class="news_post_author_and_pubdate_div">
+                <a class="news_post_author" href="{% url 'profiles:users' post.author.id %}">{{ post.author.username }}</a>
+            </div>
+            <div class="news_post_text_div">
+                <div class="news_post_text_div__inner">
+                    <p class="news_post_text">{{ post.text|safe }}</p>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+
+{% endblock %}
