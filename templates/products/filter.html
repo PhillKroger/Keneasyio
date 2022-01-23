@@ -1,7 +1,7 @@
-
 {% extends 'base.html' %}
 {% load bootstrap %}
 {% load static %}
+
 <title>
     {% block title %}
         Keneasyio - filtering
@@ -11,38 +11,50 @@
 {% block content %}
 
     {% include 'menu.html' %}
-
     <br><br>
+
     <div style="padding-left: 20%;padding-right: 20%;" class="werqwer">
-    <form method="GET">
-        <p>{{ filter.form }}
-        <button type="submit" style="display: inline-block;background: #7C83FD;color: #fff;padding: 12px;border: none;border-radius: 3px;text-decoration: none;font-family: Tahoma;font-size: 18px;line-height: 1;font-weight: 100;cursor: pointer;">Filter</button>
-        </p>
-    </form>
+        <form method="GET">
+            <p>{{ filter.form }}
+                <button type="submit" style="display: inline-block;background: #7b81f5;color: #fff; padding: 12px; padding-left:10px; border: none;border-radius: 3px;text-decoration: none;font-family: Tahoma;font-size: 18px;line-height: 1;font-weight: 100;cursor: pointer;">Filter</button>
+            </p>
+        </form>
     </div>
 
-    <div style="padding-left: 20%;padding-right: 20%;">
-    {% if filter.qs %}
-        <table>
-        {% for product in filter.qs %}
-            <div class="card">
-              <img src="https://html5css.ru/howto/img_avatar.png" alt="Avatar" style="width:100%">
-              <div class="container">
-                <h4><b>{{ product.category_season }}</b></h4>
-                <p>{{ product.category_clothes }}</p>
-                  <td>{{ product.category_size }}</td><td>{{ product.category_price }}</td>
-              </div>
-            </div>
-            <!--
-            <tr>
-                <td>{{ product.category_season }}</td><td>{{ product.category_clothes }}</td><td>{{ product.category_size }}</td><td>{{ product.category_price }}</td>
-            </tr>
-            -->
-        {% endfor %}
-        </table>
-    {% else %}
-        <p>Ops... </p>
-    {% endif %}
+    <div class="all-prd">
+        {% if filter.qs %}
+            {% for product in filter.qs %}
+                <div class="prd-slot">
+                    <img src="https://img.rasset.ie/00156431-1600.jpg" alt="" class="prd-img">
+
+                    <p>{{ product.category_image.img }}</p>
+                    <table>
+                        <tr>
+                            <td><p class="prd-d">Season </p></td>
+
+                            <td><p class="prd-d-1"> {{ product.category_season }} </p></td>
+                        </tr>
+                        <tr>
+                            <td><p class="prd-d">Model</p></td>
+                            <td><p class="prd-d-2">{{ product.category_clothes }}</p></td>
+                        </tr>
+                        <tr>
+                            <td><p class="prd-d">Size</p></td>
+                            <td><p class="prd-d-3"> {{ product.category_size }}   </p></td>
+                        </tr>
+                        <tr>
+                            <td><p class="prd-d">Price</p></td>
+                            <td><p class="prd-d-4">{{ product.category_price }}  </p></td>
+                        </tr>
+                    </table>
+
+                </div>
+            {% endfor %}
+
+        {% else %}
+            <p>Ops... </p>
+        {% endif %}
+
     </div>
 
 {% endblock content %}

@@ -1,22 +1,72 @@
-    .card {
-    /* Add shadows to create the "card" effect */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
+.all-prd {
+    padding-left: 20%;padding-right: 20%;
 }
 
-/* On mouse-over, add a deeper shadow */
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+.prd-cont {
+
 }
 
-/* Add some padding inside the card container */
-.container {
-    padding: 2px 16px;
+.prd-slot {
+    background-color: #ffffff;
+    margin: 10px;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 30px;
 }
 
+.prd-img {
+    width:200px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+
+.prd-d {
+    text-align-all: center;
+}
+
+.prd-d-1 {
+    text-align-all: center;
+    font-family: 'Comfortaa', cursive;
+    background-color: #5f84f3;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    margin-left: 30px;
+}
+
+.prd-d-2 {
+    text-align-all: center;
+    font-family: 'Comfortaa', cursive;
+    background-color: #30e57d;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    margin-left: 30px;
+
+}
+
+.prd-d-3 {
+    text-align-all: center;
+    font-family: 'Comfortaa', cursive;
+    background-color: #bc7bf6;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    margin-left: 30px;
+}
+
+.prd-d-4 {
+    text-align-all: center;
+    font-family: 'Comfortaa', cursive;
+    background-color: #f3c95f;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    margin-left: 30px;
+}
 
     body {
-        background: #F8F8F8 !important;
+        background: #f5f7f8 !important;
     }
 
     .about-1 {
