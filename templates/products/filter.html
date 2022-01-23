@@ -16,7 +16,7 @@
     <div style="padding-left: 20%;padding-right: 20%;" class="werqwer">
         <form method="GET">
             <p>{{ filter.form }}
-                <button type="submit" style="display: inline-block;background: #7b81f5;color: #fff; padding: 12px; padding-left:10px; border: none;border-radius: 3px;text-decoration: none;font-family: Tahoma;font-size: 18px;line-height: 1;font-weight: 100;cursor: pointer;">Filter</button>
+                <button type="submit" style="display: inline-block;background: #7b81f5;color: #fff;padding: 12px;margin-left: 10px; border: none;border-radius: 3px;text-decoration: none;font-family: Tahoma;font-size: 18px;line-height: 1;font-weight: 100;cursor: pointer;">Filter</button>
             </p>
         </form>
     </div>
@@ -25,9 +25,10 @@
         {% if filter.qs %}
             {% for product in filter.qs %}
                 <div class="prd-slot">
-                    <img src="https://img.rasset.ie/00156431-1600.jpg" alt="" class="prd-img">
+                    <img src="https://cdn.discordapp.com/attachments/910242299416571964/934772340158529556/t-shirt.png" alt="" class="prd-img">
 
-                    <p>{{ product.category_image.img }}</p>
+
+
                     <table>
                         <tr>
                             <td><p class="prd-d">Season </p></td>

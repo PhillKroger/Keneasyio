@@ -14,7 +14,7 @@ class CategorySeason(models.Model):
 class CategoryClothes(models.Model):
     name = models.CharField(max_length=255, verbose_name='category_clothes_name')
     # need_in_set = models.IntegerField(verbose_name='weight_in_set', null=True, default=0)
-    img = models.ImageField(verbose_name='img', upload_to='media/categories', null=True)
+    img = models.ImageField(verbose_name='img', upload_to='media/category_image', null=True)
     slug = models.SlugField(unique=True, null=True)
 
     def __str__(self):
