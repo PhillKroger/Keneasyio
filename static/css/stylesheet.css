@@ -240,22 +240,40 @@
     .button-filter {
         background-color: #548cff;
         padding: 10px;
-        border-radius: 10px;
+        border-radius: 50px;
         float: left;
-        color: #F8F8F8;
+        color: #f6aed6;
         margin: 10px;
-        box-shadow: 0 0 30px #e346bc;
+        box-shadow: 0 0 40px #e346bc;
     }
 
     .konkurs {
-        background-color: #548cff;
-        padding: 10px;
-        border-radius: 10px;
+        background-color: #e02f93;
+        padding: 15px;
+        border-radius: 50px;
         float: left;
-        color: #F8F8F8;
-        margin: 10px;
-        box-shadow: 0 0 30px #e346bc;
+        color: #f5bbdb;
+        margin: 20px;
+        box-shadow: 0 0 40px #e346bc;
+        text-decoration: none;
     }
+
+    .konkurs-a {
+        background-color: #e02f93;
+        padding: 15px;
+        border-radius: 50px;
+        float: left;
+        color: #f5bbdb;
+        margin: 20px;
+        box-shadow: 0 0 40px #e346bc;
+        text-decoration: none;
+    }
+
+    .konkurs-a:hover {
+        color: #f5bbdb;
+        text-decoration: none;
+    }
+
 
     .f-block-info {
         font-size: 30px;
@@ -275,7 +293,7 @@
     .foot-el {
         font-family: 'Comfortaa', cursive;
         float: left;
-        color: #8aabfa;
+        color: #b4defc;
         padding-left: 20px;
     }
 

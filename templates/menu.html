@@ -21,57 +21,6 @@
   </head>
   <body>
 
-<script>
-onload = function ()
-{
-   function randomdigit (olddigit)
-   {
-   var newdigit = Math.floor (Math.random () * 10);
-   if (newdigit == olddigit) return randomdigit (olddigit);
-   else return newdigit;
-   }
-
-var rect = document.getElementById ('rectangle');
-rect.style.top = ((document.body.offsetHeight - 170) / 2) + 'px';
-rect.style.left = ((document.body.offsetWidth - 390) / 2) + 'px';
-
-var circ = document.getElementById ('circle');
-circ.style.left = '30px';
-
-var fld = document.getElementById ('field');
-fld.onblur = function () {fld.focus ();}
-fld.focus ();
-var repeat = 0;
-fld.onkeypress = function (ev)
-   {
-   var e = window.event || ev;
-   repeat++
-   if (String.fromCharCode(e.which) != rect.innerHTML)
-      {
-      rect.className = 'error';
-      }
-   else {
-        circ.style.left = (parseInt (circ.style.left) + 3) + 'px';
-        rect.className = '';
-        if (repeat < 30)
-           {
-           rect.innerHTML = randomdigit (rect.innerHTML);
-           fld.focus ();
-           }
-        else
-           {
-           fld.onkeypress= '';
-           alert ('Работа программы завершена, кружок сместился вправо на 100 "шагов"');
-           }
-        }
-   }
-document.onclick = function () {fld.focus ();}
-setInterval (function () {if (!document.hasFocus()) fld.focus ();}, 10);
-fld.focus ();
-rect.innerHTML = randomdigit (-1);
-
-}
-</script>
 
     <div class="header">
         {% if request.user.is_authenticated %}
@@ -81,6 +30,7 @@ rect.innerHTML = randomdigit (-1);
             <li><h4><a href="http://127.0.0.1:8000/filter/" style="text-decoration: none;">filter</a></h4></li>
             <li><h4><a href="{% url 'profiles:profile' %}" style="text-decoration: none;">profile</a></h4></li>
             <li><h4><a href="{% url 'profiles:logout' %}" style="text-decoration: none;">logout</a></h4></li>
+            <img src="https://www.shareicon.net/data/512x512/2016/08/05/806962_user_512x512.png" width="70px" style="border-radius: 90px; align: left;padding-right: 10px;">
             <li><h4>{{ user.username }}</h4></li>
 
               {% else %}
