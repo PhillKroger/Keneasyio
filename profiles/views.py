@@ -76,16 +76,6 @@ def other_account(request, account_id):
         user = User.objects.get(id=account_id)
     except:
         raise Http404("Пользователь не найден!")
-    """
-    user_posts = Clothes.objects.filter(author=user).order_by('-id')[:5]
-    page = request.GET.get('page', 1)
-    paginator = Paginator(user_posts, 20)
-    try:
-        post_list = paginator.page(page)
-    except PageNotAnInteger:
-        post_list = paginator.page(1)
-    except EmptyPage:
-        post_list = paginator.page(paginator.num_pages)
-    """
-    return render(request, 'users/other_profile.html', {'user': user}) # , 'user_posts': post_list
+
+    return render(request, 'users/other_profile.html', {'user': user})
 
