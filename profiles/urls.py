@@ -3,7 +3,6 @@ from profiles.views import login_view, logout_view, register_view, user_account,
 
 
 urlpatterns = [
-
     path('login/', login_view, name='login'),
     path('logout/', logout_view, name='logout'),
     path('profile/', user_account, name='profile'),

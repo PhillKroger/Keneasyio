@@ -6,30 +6,32 @@
 
     {% include 'menu.html' %}
 
-
     <div class="main_div">
-    <img src="{{ user.avatar.url }}" class="other_profile_avatar_div">
-    <h1 class="other_profile_username">{{ user.username }}</h1>
-    <p class="other_profile_description">{{ user.description }}</p>
+        <img src="{{ user.avatar.url }}" class="other_profile_avatar_div">
+        <h1 class="other_profile_username">
+            {{ user.username }}
+        </h1>
+        <p class="other_profile_description">
+            {{ user.description }}
+        </p>
     </div>
 
-
     {% for post in user_posts %}
-
         <div class="other_profile_post">
             <img class="other_profile_post_avatar_div_t" src="{{ user.avatar.url }}">
             <div class="other_profile_post_author_and_pubdate_div">
-
-                <a class="other_profile_post_author" href="{% url 'profiles:users' post.author.id %}">{{ post.author.username }}</a>
+                <a class="other_profile_post_author" href="{% url 'profiles:users' post.author.id %}">
+                    {{ post.author.username }}
+                </a>
             </div>
             <div class="other_profile_post_text_div">
                 <div class="other_profile_post_text_div__inner">
-                    <p class="other_profile_post_text">{{ post.text|safe }}</p>
+                    <p class="other_profile_post_text">
+                        {{ post.text|safe }}
+                    </p>
                 </div>
             </div>
         </div>
 
-
     {% endfor %}
-
 {% endblock %}

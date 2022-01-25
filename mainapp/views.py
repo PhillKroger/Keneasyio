@@ -1,9 +1,9 @@
-from django.contrib.auth.models import User
+# from django.contrib.auth.models import User
 from django.shortcuts import render
 from django.views.generic import ListView
 from .filters import ProductFilter
 from .models import Product
-from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+# from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 
 def mainapp(request):

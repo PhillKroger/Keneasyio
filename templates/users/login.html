@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 
-<title>{% block title %}Sign In{% endblock %}</title>
+<title>
+    {% block title %}
+        Sign In
+    {% endblock %}
+</title>
 
 {% block content %}
 
@@ -9,13 +13,17 @@
     <div class="login_form_div">
         <h1 class="login_logo">Sign In</h1>
         <div>
-            <form method="POST" action="">{% csrf_token %}
+            <form method="POST" action="">
+                {% csrf_token %}
                 <div>
-                {{ form.as_p }}
+                    {{ form.as_p }}
                 </div>
-                <button class="login_button" type="submit"><p class="text_button">sign In</p></button>
+                <button class="login_button" type="submit">
+                    <p class="text_button">
+                        sign In
+                    </p>
+                </button>
             </form>
         </div>
     </div>
-
 {% endblock %}

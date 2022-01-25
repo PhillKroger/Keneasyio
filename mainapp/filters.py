@@ -5,8 +5,9 @@ from .models import Product
 class ProductFilter(filters.FilterSet):
     class Meta:
         model = Product
-        fields = ('category_season',
-                  'category_size',
-                  'category_price'
-                  )
+        fields = (
+            'category_season',
+            'category_size',
+            'category_price'
+            )
 

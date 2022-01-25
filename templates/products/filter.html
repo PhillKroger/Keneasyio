@@ -24,15 +24,12 @@
     <div class="all-prd">
         {% if filter.qs %}
             {% for product in filter.qs %}
+
                 <div class="prd-slot">
                     <img src="https://cdn.discordapp.com/attachments/910242299416571964/934772340158529556/t-shirt.png" alt="" class="prd-img">
-
-
-
                     <table>
                         <tr>
                             <td><p class="prd-d">Season </p></td>
-
                             <td><p class="prd-d-1"> {{ product.category_season }} </p></td>
                         </tr>
                         <tr>
@@ -48,14 +45,13 @@
                             <td><p class="prd-d-4">{{ product.category_price }}  </p></td>
                         </tr>
                     </table>
-
                 </div>
+
             {% endfor %}
 
         {% else %}
             <p>Ops... </p>
         {% endif %}
-
     </div>
 
 {% endblock content %}

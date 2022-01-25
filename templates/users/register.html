@@ -1,7 +1,5 @@
 {% extends "base.html" %}
-
 <title>{% block title %}Sign Up{% endblock %}</title>
-
 {% block content %}
 
     {% include 'menu.html' %}
@@ -9,13 +7,15 @@
     <div class="register_form_div">
         <h1 class="register_logo">Sign up</h1>
         <div>
-            <form method="POST" action="">{% csrf_token %}
+            <form method="POST" action="">
+                {% csrf_token %}
                 <div>
-                {{ form.as_p }}
+                    {{ form.as_p }}
                 </div>
-                <button class="register_button" type="submit"><p class="text_button">Sign Up</p></button>
+                <button class="register_button" type="submit">
+                    <p class="text_button">Sign Up</p>
+                </button>
             </form>
         </div>
     </div>
-
 {% endblock %}
