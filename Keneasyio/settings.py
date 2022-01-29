@@ -8,7 +8,7 @@ SECRET_KEY = 'django-insecure-**wa86#=m2z6ymzac#gz=-*7f1y*=$nde+i)=+syyl+^)dnysv
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://keneasyio.herokuapp.com']
+ALLOWED_HOSTS = ['keneasyio.herokuapp.com', '127.0.0.1']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
