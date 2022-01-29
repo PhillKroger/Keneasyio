@@ -1,6 +1,9 @@
 from django.db import models
 from django.contrib.auth.models import User
 import uuid
+from ckeditor.fields import RichTextField
+from django.contrib.auth.models import User
+from django.conf import settings
 
 
 class CategorySeason(models.Model):
@@ -38,15 +41,15 @@ class CategoryPrice(models.Model):
 
 
 class CategoryImage(models.Model):
-    name = models.CharField(max_length=255, verbose_name='category_image_name')
-    img = models.ImageField(verbose_name='img', upload_to='media/category_image', null=True)
+    # name = models.CharField(max_length=255, verbose_name='category_image_name')
+    img = models.ImageField(verbose_name='img', upload_to='media/category_image', null=True, blank=True)
 
     def __str__(self):
-        return "{}".format(self.name)
+        return "{}".format(self.img)
 
 
 class Product(models.Model):
-
+    img = models.ImageField(verbose_name='img', upload_to='media/', null=True, blank=True)
     category_season = models.ForeignKey(
         CategorySeason, verbose_name='category_season', on_delete=models.CASCADE, blank=True, null=True
     )
@@ -72,3 +75,17 @@ class Product(models.Model):
 
     def __str__(self):
         return '{} {} {} {} {}'.format(self.slug, self.category_season, self.category_clothes, self.category_size, self.category_price)
+
+
+class Post(models.Model):
+    title = models.CharField("Название поста", max_length=50, null=True)
+    text = RichTextField("Текст поста", null=True)
+    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    num = models.IntegerField(null=True, blank=True, default=0)
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = "Post"
+        verbose_name_plural = "Posts"

@@ -21,7 +21,7 @@
 }
 
 .prd-d-1 {
-    text-align-all: center;
+    text-align: center;
     font-family: 'Comfortaa', cursive;
     background-color: #5f84f3;
     color: white;
@@ -31,7 +31,7 @@
 }
 
 .prd-d-2 {
-    text-align-all: center;
+    text-align: center;
     font-family: 'Comfortaa', cursive;
     background-color: #30e57d;
     color: white;
@@ -42,7 +42,7 @@
 }
 
 .prd-d-3 {
-    text-align-all: center;
+    text-align: center;
     font-family: 'Comfortaa', cursive;
     background-color: #bc7bf6;
     color: white;
@@ -52,7 +52,7 @@
 }
 
 .prd-d-4 {
-    text-align-all: center;
+     text-align: center;
     font-family: 'Comfortaa', cursive;
     background-color: #f3c95f;
     color: white;
@@ -348,6 +348,19 @@ footer {
     float: right;
     margin-bottom: 80px;
 }
+.btn-third {
+    background-color: #6e9fff;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.btn-third:hover {
+
+}
+
 
 @media all and (max-width: 1200px) {
 

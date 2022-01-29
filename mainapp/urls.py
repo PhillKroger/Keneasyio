@@ -7,4 +7,6 @@ urlpatterns = [
     path('', views.mainapp, name="mainapp"),
     path('filter/', views.ProductListView.as_view(), name='index'),
     path('about/', views.about, name='about'),
+    path('leave_a_note/', views.post_create, name='post_create')
+
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

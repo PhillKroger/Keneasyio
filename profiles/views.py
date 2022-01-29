@@ -5,7 +5,7 @@ from django.shortcuts import render
 from profiles.forms import UserLoginForm, UserRegistrationForm
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from mainapp.models import Product
-
+from mainapp.models import Post
 from django.conf import settings
 from django.contrib.auth import authenticate
 
@@ -55,8 +55,8 @@ def user_account(request):
 
         email = request.user
         user = User.objects.get(email=email)
-        """
-        user_posts = Clothes.objects.filter(author=user).order_by('-id')[:5]
+
+        user_posts = Post.objects.filter(author=user).order_by('-id')[:5]
         page = request.GET.get('page', 1)
         paginator = Paginator(user_posts, 20)
         try:
@@ -67,8 +67,8 @@ def user_account(request):
             post_list = paginator.page(paginator.num_pages)
 
         else:
-        """
-        return render(request, 'users/profile.html', {'user': user}) # , 'user_posts': post_list
+
+            return render(request, 'users/profile.html', {'user': user, 'user_posts': post_list}) # , 'user_posts': post_list
 
 
 def other_account(request, account_id):
@@ -76,6 +76,5 @@ def other_account(request, account_id):
         user = User.objects.get(id=account_id)
     except:
         raise Http404("Пользователь не найден!")
-
     return render(request, 'users/other_profile.html', {'user': user})
 

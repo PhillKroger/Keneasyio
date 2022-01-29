@@ -11,25 +11,25 @@
     <div class="main_div" style="padding-left: 20%;">
          <h1 class="profile_username">{{ user.username }}</h1>
         <p class="profile_username">{{ user.email }}</p>
+    <h4 style="text-decoration: none; color: #333333;"><a href="{% url 'mainapp:post_create' %}" style="text-decoration: none; color: #333333;">Make a note</a></h4>
     </div>
 
     <br><br><br><br>
 
+    <div style="padding-left: 20%; padding-right: 20%;">
     {% for post in user_posts %}
         <div class="profile_post">
-            <img class="profile_post_avatar_div" src="{{ user.avatar.url }}" width="70px" style="border-radius: 0%;">
-            <div class="profile_post_author_and_pubdate_div">
-                <a class="profile_post_author" href="{% url 'profiles:users' post.author.id %}">
-                    {{ post.author.username }}
-                </a>
-            </div>
             <div class="profile_post_text_div">
                 <div class="profile_post_text_div__inner">
+                    <h1>{{ post.title|safe }}</h1>
                     <p class="profile_post_text">
                         {{ post.text|safe }}
                     </p>
                 </div>
             </div>
         </div>
+        <br>
+        <hr>
     {% endfor %}
+    </div>
 {% endblock %}

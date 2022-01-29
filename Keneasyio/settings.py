@@ -4,7 +4,7 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 # PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
-SECRET_KEY = SECRET_KEY
+SECRET_KEY = 'django-insecure-**wa86#=m2z6ymzac#gz=-*7f1y*=$nde+i)=+syyl+^)dnysv'
 
 DEBUG = True
 
@@ -20,7 +20,9 @@ INSTALLED_APPS = [
     'mainapp',
     'django_filters',
     'bootstrapform',
-    'profiles'
+    'profiles',
+    'ckeditor'
+
 ]
 
 AUTH_USER_MODEL = 'profiles.User'
