@@ -6,9 +6,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-**wa86#=m2z6ymzac#gz=-*7f1y*=$nde+i)=+syyl+^)dnysv'
 
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://keneasyio.herokuapp.com']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
