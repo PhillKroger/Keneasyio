@@ -4,11 +4,13 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 # PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
-SECRET_KEY = SECRET_KEY
+SECRET_KEY = 'django-insecure-*wa86#=m2z6ymzac#gz=-7f1y*=$nde+i)=+syyl+^)dnysv'
 
-DEBUG = False
+# DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['keneasyio.herokuapp.com', '127.0.0.1']
+# ALLOWED_HOSTS = ['keneasyio.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'django.contrib.admin',
