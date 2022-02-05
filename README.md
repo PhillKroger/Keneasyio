@@ -16,3 +16,4 @@ The project is created using python and its django framework. Front-end implemen
 © All rights reserved
 
 --------------
+
