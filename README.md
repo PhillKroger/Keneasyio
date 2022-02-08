@@ -27,6 +27,7 @@ Equipment and programs (resources).
 -------------------------------------
 
 **Description**
+
 Now I’ll tell you a little about the interface of my mini-project.
 The first photo is the main page. She acts as the cover of the project.
 Header - top of the page with possible links. We have 5 of them.
