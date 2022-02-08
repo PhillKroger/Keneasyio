@@ -3,9 +3,14 @@
 **Introduction**
 
 Project relevance:
+
 ```
-Nowadays, the problem of finding clothes is not something difficult. It is much more difficult to find what suits you personally. And it is not always convenient to run from one page to another to select everything separately. Therefore, we decided to create a website that can simplify the choice and show everything you need in sets.
+Nowadays, the problem of finding clothes is not something difficult.
+It is much more difficult to find what suits you personally.
+And it is not always convenient to run from one page to another to select everything separately.
+Therefore, we decided to create a website that can simplify the choice and show everything you need in sets.
 ```
+
 
 The purpose and objectives of the project
 
