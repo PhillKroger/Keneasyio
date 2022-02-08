@@ -48,17 +48,27 @@ Header - top of the page with possible links. We have 5 of them.
 ------------------------------
 
 **Profile**
+
 ```
-  On the user profile page, his nickname and mail are shown at the top (the username is also indicated in the site header). Below is a link to a page to create a post. At the very bottom, all notes-posts of the user are shown.
+  On the user profile page, his nickname and mail are shown at the top
+  (the username is also indicated in the site header).
+  Below is a link to a page to create a post. At the very bottom,
+  all notes-posts of the user are shown.
 ```
+
 ![profile](https://user-images.githubusercontent.com/66637696/153063501-6188378e-fcee-492b-8505-1041a370d734.png)
 
 --------------------------------------
 
 **Filter**
+
 ```
-This page with all the products on the site, which can be filtered by three parameters: season, size, price. You can set only 3 optional search parameters
-The product card is very simple. It contains basic information about the product.
+This page with all the products on the site,
+which can be filtered by three parameters:
+season, size, price. You can set only 3 optional search parameters
+The product card is very simple.
+It contains basic information about the product.
 ```
+
 ![filtering](https://user-images.githubusercontent.com/66637696/153063593-d9618d29-c29a-4bc5-8d45-e83f1b5a98ec.png)
 
