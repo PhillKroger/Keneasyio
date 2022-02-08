@@ -1,6 +1,6 @@
 # Keneasy.io web-site for filtering clothes and creating sets
 
-**Introduction**
+
 
 ``Project relevance:``
 
@@ -16,14 +16,14 @@ The purpose and objectives of the project
 
 Create a simple filter site to search for clothes by parameters. An analogue of an online store, only without unnecessary functionality and assortment.
 
-**Tasks**
+``Tasks``
 1) Learn the Python programming language and its Django framework.
 2) Implement a simple user-friendly interface.
 3) Add functionality
 4) Make the project public
 
 
-**Methodology for performing work**
+``Methodology for performing work``
 
 Equipment and programs (resources).
 1. Laptop
@@ -32,7 +32,7 @@ Equipment and programs (resources).
 
 -------------------------------------
 
-**Description**
+``Description``
 ```
 Now I’ll tell you a little about the interface of my mini-project.
 The first photo is the main page. She acts as the cover of the project.
@@ -47,7 +47,7 @@ Header - top of the page with possible links. We have 5 of them.
 
 ------------------------------
 
-**Profile**
+``Profile``
 
 ```
   On the user profile page, his nickname and mail are shown at the top
@@ -60,7 +60,7 @@ Header - top of the page with possible links. We have 5 of them.
 
 --------------------------------------
 
-**Filter**
+``Filter``
 
 ```
 This page with all the products on the site,
