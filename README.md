@@ -1,4 +1,4 @@
-# Keneasy.io web-site for filtering clothes and creating sets
+# Keneasy.io {web-site for filtering clothes and creating sets}
 
 
 
