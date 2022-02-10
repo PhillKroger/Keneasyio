@@ -41,7 +41,6 @@ class CategoryPrice(models.Model):
 
 
 class CategoryImage(models.Model):
-    # name = models.CharField(max_length=255, verbose_name='category_image_name')
     img = models.ImageField(verbose_name='img', upload_to='media/category_image', null=True, blank=True)
 
     def __str__(self):
@@ -50,36 +49,22 @@ class CategoryImage(models.Model):
 
 class Product(models.Model):
     img = models.ImageField(verbose_name='img', upload_to='media/', null=True, blank=True)
-    category_season = models.ForeignKey(
-        CategorySeason, verbose_name='category_season', on_delete=models.CASCADE, blank=True, null=True
-    )
-
-    category_image = models.ForeignKey(
-        CategoryImage, verbose_name='category_Image', on_delete=models.CASCADE, blank=True, null=True
-    )
-
-    category_clothes = models.ForeignKey(
-        CategoryClothes, verbose_name='category_clothes', on_delete=models.CASCADE, blank=True, null=True
-    )
-
-    category_size = models.ForeignKey(
-        CategorySize, verbose_name='category_size', on_delete=models.CASCADE, blank=True, null=True
-    )
-
-    category_price = models.ForeignKey(
-        CategoryPrice, verbose_name='category_price', on_delete=models.CASCADE, blank=True, null=True
-    )
+    category_season = models.ForeignKey(CategorySeason, verbose_name='category_season', on_delete=models.CASCADE, blank=True, null=True)
+    category_image = models.ForeignKey(CategoryImage, verbose_name='category_Image', on_delete=models.CASCADE, blank=True, null=True)
+    category_clothes = models.ForeignKey(CategoryClothes, verbose_name='category_clothes', on_delete=models.CASCADE, blank=True, null=True)
+    category_size = models.ForeignKey(CategorySize, verbose_name='category_size', on_delete=models.CASCADE, blank=True, null=True)
+    category_price = models.ForeignKey(CategoryPrice, verbose_name='category_price', on_delete=models.CASCADE, blank=True, null=True)
     color = models.CharField(max_length=255, verbose_name='color', null=True)
     product_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     slug = models.SlugField(unique=True, null=True)
 
     def __str__(self):
-        return '{} {} {} {} {}'.format(self.slug, self.category_season, self.category_clothes, self.category_size, self.category_price)
+        return '{} {} {} {}'.format(self.slug, self.category_season, self.category_clothes, self.category_size)
 
 
 class Post(models.Model):
-    title = models.CharField("Название поста", max_length=50, null=True)
-    text = RichTextField("Текст поста", null=True)
+    title = models.CharField("Title", max_length=50, null=True)
+    text = RichTextField("Text", null=True)
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     num = models.IntegerField(null=True, blank=True, default=0)
 
@@ -89,3 +74,19 @@ class Post(models.Model):
     class Meta:
         verbose_name = "Post"
         verbose_name_plural = "Posts"
+
+
+class Set(models.Model):
+    name = models.CharField(max_length=255, verbose_name='name', null=True)
+    set_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    pr = models.ManyToManyField(Product)
+
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = "Set"
+        verbose_name_plural = "Sets"
+
+

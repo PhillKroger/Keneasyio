@@ -10,4 +10,3 @@ class ProductFilter(filters.FilterSet):
             'category_size',
             'category_price'
             )
-
