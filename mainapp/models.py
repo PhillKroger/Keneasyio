@@ -77,7 +77,7 @@ class Post(models.Model):
 
 
 class Set(models.Model):
-    name = models.CharField(max_length=255, verbose_name='name', null=True)
+    name = models.CharField(max_length=255, verbose_name='Name', null=True)
     set_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     pr = models.ManyToManyField(Product)
 
