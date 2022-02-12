@@ -13,6 +13,13 @@
     {% include 'menu.html' %}
     <br><br>
 
+    <div>
+    {% for set in sets %}
+        <p>{{ set.name }}</p>
+    {% endfor %}
+    </div>
+
+
     <div style="padding-left: 20%;padding-right: 20%;" class="werqwer">
         <form method="GET">
             <p>{{ filter.form }}
@@ -20,7 +27,6 @@
             </p>
         </form>
     </div>
-
 
     <div class="all-prd">
         {% if filter.qs %}

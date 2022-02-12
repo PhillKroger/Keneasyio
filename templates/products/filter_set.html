@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load bootstrap %}
+{% load static %}
+
+<title>
+    {% block title %}
+        Keneasyio - filtering
+    {% endblock title %}
+</title>
+
+{% block content %}
+
+    {% include 'menu.html' %}<br><br>
+
+    <div>
+        {% for set in sets %}
+            <p>{{ set.name }}</p><p>{{ set.pr.category_size }}</p>
+        {% endfor %}
+    </div>
+
+{% endblock content %}

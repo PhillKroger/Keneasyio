@@ -7,6 +7,7 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from .forms import PostForm
 from django.shortcuts import render, redirect
 import datetime
+from .models import *
 
 
 def mainapp(request):
@@ -37,11 +38,25 @@ class CategoryPr:
         return CategoryPrice.objects.all()
 
 
-class ProductListView(ListView):
+def sets(request):
+    sets = Set.objects.all()
+    page = request.GET.get('page', 1)
+    paginator = Paginator(sets, 20)
+    try:
+        post_list = paginator.page(page)
+    except PageNotAnInteger:
+        post_list = paginator.page(1)
+    except EmptyPage:
+        post_list = paginator.page(paginator.num_pages)
 
+    return render(request, 'products/filter_set.html', {'sets': post_list})
+
+
+class ProductListView(ListView):
     model = Product
     template_name = 'products/filter.html'
     # queryset = Product.objects.filter(draft=False)
+
 
     def get_queryset(self):
         query = self.request.GET.get('search')
@@ -60,3 +75,4 @@ class ProductListView(ListView):
         c = super().get_context_data(**kwargs)
         c['filter'] = ProductFilter(self.request.GET, queryset=self.get_queryset())
         return c
+
