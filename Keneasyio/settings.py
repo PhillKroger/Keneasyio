@@ -4,7 +4,7 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 # PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
-SECRET_KEY = 'django-insecure-*wa86#=m2z6ymzac#gz=-7f1y*=$nde+i)=+syyl+^)dnysv'
+SECRET_KEY = 'secret_key.txt'
 
 # DEBUG = False
 DEBUG = True
@@ -21,7 +21,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'mainapp',
     'django_filters',
-    'bootstrapform',
+
     'profiles',
     'ckeditor'
 
@@ -66,7 +66,7 @@ WSGI_APPLICATION = 'Keneasyio.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 

@@ -81,12 +81,9 @@ class Set(models.Model):
     set_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     pr = models.ManyToManyField(Product)
 
-
     def __str__(self):
         return self.name
 
     class Meta:
         verbose_name = "Set"
         verbose_name_plural = "Sets"
-
-

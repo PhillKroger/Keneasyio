@@ -33,11 +33,6 @@ def post_create(request):
     return render(request, 'posts/form.html', {'form': form})
 
 
-class CategoryPr:
-    def get_prices(self):
-        return CategoryPrice.objects.all()
-
-
 def sets(request):
     sets = Set.objects.all()
     page = request.GET.get('page', 1)
