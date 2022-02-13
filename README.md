@@ -1,6 +1,4 @@
-# Keneasy.io {web-site for filtering clothes and creating sets}
-
-
+# Keneasy.io | web-site for filtering clothes and creating sets
 
 ``Project relevance:``
 
@@ -42,6 +40,7 @@ Header - top of the page with possible links. We have 5 of them.
 4) Profile - link to user profile
 5) Logout / Sign in / Sign up - logout / login / registration
 ```
+
 ![home](https://user-images.githubusercontent.com/66637696/153063419-dcbe464d-960a-422d-a7df-16fa38868b79.png)
 
 ------------------------------
@@ -70,4 +69,3 @@ It contains basic information about the product.
 ```
 
 ![filtering](https://user-images.githubusercontent.com/66637696/153063593-d9618d29-c29a-4bc5-8d45-e83f1b5a98ec.png)
-
