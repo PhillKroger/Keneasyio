@@ -1,4 +1,4 @@
-# Keneasy.io    Web-site for filtering clothes and creating sets
+# #Keneasy.io   | Web-site for filtering clothes and creating sets
 
 ``Project relevance:``
 
