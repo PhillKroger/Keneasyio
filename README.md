@@ -1,5 +1,5 @@
 # Keneasy.io 
-````Web-site for filtering clothes and creating sets````
+<<Web-site for filtering clothes and creating sets>>
 
 ``Project relevance:``
 
