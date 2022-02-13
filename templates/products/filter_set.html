@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% load bootstrap %}
+
 {% load static %}
 
 <title>
@@ -12,10 +12,41 @@
 
     {% include 'menu.html' %}<br><br>
 
-    <div>
-        {% for set in sets %}
-            <p>{{ set.name }}</p><p>{{ set.pr.category_size }}</p>
+    <div style="padding-left: 20%;padding-right: 20%;">
+    {% for set in sets %}
+        <br><br><br><br>
+        <p class="prd-d-1">{{ set.name }}</p>
+        {% for v in set.pr.all %}
+
+            <div class="prd-slot">
+                    <img src="{{ v.category_clothes.img.url }}" alt="" class="prd-img">
+
+                    <table>
+                        <tr>
+                            <td><p class="prd-d">Season </p></td>
+                            <td><p class="prd-d-1"> {{ v.category_season }} </p></td>
+                        </tr>
+                        <tr>
+                            <td><p class="prd-d">Model</p></td>
+                            <td><p class="prd-d-2">{{ v.category_clothes }}</p></td>
+                        </tr>
+                        <tr>
+                            <td><p class="prd-d">Size</p></td>
+                            <td><p class="prd-d-3"> {{ v.category_size }}   </p></td>
+                        </tr>
+                        <tr>
+                            <td><p class="prd-d">Price</p></td>
+                            <td><p class="prd-d-4">{{ v.category_price }}  </p></td>
+                        </tr>
+                    </table>
+
+                    <p class="btn-third"><b style="text-align: center;">В корзину</b></p>
+
+                </div>
+
+
         {% endfor %}
+    {% endfor %}
     </div>
 
 {% endblock content %}
