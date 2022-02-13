@@ -17,10 +17,8 @@
         <br><br><br><br>
         <p class="prd-d-1">{{ set.name }}</p>
         {% for v in set.pr.all %}
-
             <div class="prd-slot">
                     <img src="{{ v.category_clothes.img.url }}" alt="" class="prd-img">
-
                     <table>
                         <tr>
                             <td><p class="prd-d">Season </p></td>
@@ -41,10 +39,7 @@
                     </table>
 
                     <p class="btn-third"><b style="text-align: center;">В корзину</b></p>
-
                 </div>
-
-
         {% endfor %}
     {% endfor %}
     </div>
