@@ -56,7 +56,7 @@ Header - top of the page with possible links. We have 5 of them.
 
 ![profile](https://user-images.githubusercontent.com/66637696/153063501-6188378e-fcee-492b-8505-1041a370d734.png)
 
---------------------------------------
+--------------------------------
 
 ``Filter``
 
