@@ -1,6 +1,7 @@
-# #Keneasy.io   | Site for filtering clothes and creating sets
+# Keneasy.io | Site for filtering clothes and creating sets
 
-``Project relevance:``
+``Project relevance``
+
 ```
 Nowadays, the problem of finding clothes is not something difficult.
 It is much more difficult to find what suits you personally.
@@ -21,7 +22,7 @@ Create a simple filter site to search for clothes by parameters. An analogue of 
 
 ``Methodology for performing work``
 
-Equipment and programs (resources).
+Equipment and programs (resources)
 1. Laptop
 2. Python programming language.
 3. PyCharm development environment
@@ -29,6 +30,7 @@ Equipment and programs (resources).
 -------------------------------------
 
 ``Description``
+
 ```
 Now I’ll tell you a little about the interface of my mini-project.
 The first photo is the main page. She acts as the cover of the project.
