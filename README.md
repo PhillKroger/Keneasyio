@@ -61,6 +61,7 @@ Header - top of the page with possible links. We have 5 of them.
 
 ``Filter``
 
+
 ```
 This page with all the products on the site,
 which can be filtered by three parameters:
