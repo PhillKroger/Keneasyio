@@ -1,8 +1,4 @@
-
-
-.all-prd {
-    padding-left: 20%;padding-right: 20%;
-}
+.all-prd {padding-left: 20%;padding-right: 20%;}
 
 .prd-slot {
     background-color: #ffffff;
@@ -18,9 +14,7 @@
     margin-bottom: 10px;
 }
 
-.prd-d {
-    text-align-all: center;
-}
+.prd-d {text-align-all: center;}
 
 .prd-d-1 {
     text-align: center;
@@ -40,7 +34,6 @@
     border-radius: 30px;
     padding: 10px;
     margin-left: 30px;
-
 }
 
 .prd-d-3 {
@@ -54,7 +47,7 @@
 }
 
 .prd-d-4 {
-     text-align: center;
+    text-align: center;
     font-family: 'Comfortaa', cursive;
     background-color: #f3c95f;
     color: white;
@@ -63,13 +56,9 @@
     margin-left: 30px;
 }
 
-body {
-    background: #f5f7f8 !important;
-}
+body {background: #f5f7f8 !important;}
 
-.about-1 {
-    padding-left: 50px;
-}
+.about-1 {padding-left: 50px;}
 
 .nav {
     border-radius: 0px !important;
@@ -77,13 +66,9 @@ body {
     background-color: #5f84f3 !important;
 }
 
-.mb-7 {
-    margin-bottom: 7px !important;
-}
+.mb-7 {margin-bottom: 7px !important;}
 
-.mt-5 {
-    margin-top: 5px !important;
-}
+.mt-5 {margin-top: 5px !important;}
 
 .mymodal {
     font-size: 20px !important;
@@ -91,17 +76,11 @@ body {
     top: 200px !important;
 }
 
-.mb-5 {
-    margin-bottom: 0px !important;
-}
+.mb-5 {margin-bottom: 0px !important;}
 
-.w-big {
-    width: 200px !important;
-}
+.w-big {width: 200px !important;}
 
-.bwhite-lg {
-    background-color: transparent !important;
-}
+.bwhite-lg {background-color: transparent !important;}
 
 .bwhite-sm {
     background-color: transparent !important;
