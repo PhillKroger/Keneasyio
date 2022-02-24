@@ -2,7 +2,6 @@
 
 ``Project relevance``
 
-
 ```
 Nowadays, the problem of finding clothes is not something difficult.
 It is much more difficult to find what suits you personally.
@@ -19,7 +18,6 @@ Create a simple filter site to search for clothes by parameters. An analogue of 
 2) Implement a simple user-friendly interface.
 3) Add functionality
 4) Make the project public
-
 
 ``Methodology for performing work``
 
