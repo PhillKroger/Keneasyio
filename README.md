@@ -8,9 +8,6 @@ It is much more difficult to find what suits you personally.
 And it is not always convenient to run from one page to another to select everything separately.
 Therefore, we decided to create a website that can simplify the choice and show everything you need in sets.
 ```
-
-The purpose and objectives of the project
-
 Create a simple filter site to search for clothes by parameters. An analogue of an online store, only without unnecessary functionality and assortment.
 
 ``Tasks``
