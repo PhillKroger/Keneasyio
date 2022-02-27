@@ -34,26 +34,22 @@ Ready-made sets with various filtering by clothing selection parameters simplify
 ```
 
 ``Hardware and software (resources) ``
-```
+
 ⦁ Laptop 
 ⦁ Python programming language, Django, layout tools 
 ⦁ PyCharm development environment
-```
 
-```
 Description of work ⦁ The main components of any website are content and design.
 The main task of design is to create a convenient and intuitive interface,
 which we will talk about first. The main page contains basic information
 with main links (Fig. 1.). Header - top of the page with possible links:
-```
 
-```
 Home - go to the main page;
 About - a link to a page with a brief description of the project;
 Filter - page with the main functionality of the project;
 Profile - link to the user profile;
 Logout / Sign in / Sign up - logout / login / registration.
-```
+
 
 ![home](https://user-images.githubusercontent.com/66637696/153063419-dcbe464d-960a-422d-a7df-16fa38868b79.png)
 
