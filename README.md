@@ -2,8 +2,18 @@
 
 ``Introduction``
 ```
-The modern world provides a huge variety of different products, goods and services. This is especially noticeable when we go to shopping centers or online stores. Every year, the number of different stores and brands is expanding in almost all areas, and clothing and footwear are no exception.
-In the rhythm of modern society, many people practically do not have time to visit clothing stores and select an image. Fortunately, online shopping is very developed today. Wildberries, lamoda, online stores of individual brands, stores in social networks and much more give us a huge choice. Finding the right image can take a very long time due to the enormous variety. Finding a T-shirt or sweater that matches sneakers is not an easy task for everyone. But you still want to dress uniquely and stylishly. In this regard, we decided to create a site where clothing stores will create their own sets and share them with users who will be able to purchase clothes immediately on the site.
+The modern world provides a huge variety of different products, goods and services.
+This is especially noticeable when we go to shopping centers or online stores.
+Every year, the number of different stores and brands is expanding in almost all areas,
+and clothing and footwear are no exception.
+In the rhythm of modern society, many people practically do not have time to visit clothing stores and select an image.
+Fortunately, online shopping is very developed today. Wildberries, lamoda, online stores of individual brands,
+stores in social networks and much more give us a huge choice.
+Finding the right image can take a very long time due to the enormous variety.
+Finding a T-shirt or sweater that matches sneakers is not an easy task for everyone.
+But you still want to dress uniquely and stylishly. In this regard,
+we decided to create a site where clothing stores will create their
+own sets and share them with users who will be able to purchase clothes immediately on the site.
 ```
 
 ``The purpose and objectives of the project``
