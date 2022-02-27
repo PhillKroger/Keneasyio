@@ -70,9 +70,9 @@ This page with all the products on the site, which can be filtered by
 three parameters: season, size, price. You can set only 3 optional search parameters
 The product card is very simple. It contains basic information about the product.
 ```
-<br>
+
 ![filtering](https://user-images.githubusercontent.com/66637696/153063593-d9618d29-c29a-4bc5-8d45-e83f1b5a98ec.png)
-<br>
+
 ```
 A page displaying all the sets on the site.
 Not only users, but also shops will be registered on the site. This page
@@ -80,28 +80,28 @@ displays all sets of all stores in order. Further comments and likes will
 be attached to the sets to promote the best sets.
 All images show template pictures of clothes (Fig. 4.). This was done for convenience.
 ```
-<br>
+
 ![2022-02-26_2](https://user-images.githubusercontent.com/66637696/155880711-0cfcb1b7-2c4c-4e5b-851b-ddb1752ab8de.png)
 
-<br>
+
 ```
 5. Description of site development.
 From the very beginning, I created a skeleton site in Django.
 After that I created a user model for registration, login and profile.
 The photo shows the user model in the project
 ```
-<br>
+
 ![2022-02-26_1](https://user-images.githubusercontent.com/66637696/155880758-abfa1f1f-730f-41ed-8282-c303ad8f45f3.png)
-<br>
+
 
 ```
 After that I created a base.html file which is templated. I used his framework in all other files.
   {% block content%}{% endblock %} - this construction is used to pass other data there
 The photo shows the base.html file code
 ```
-<br>
+
 ![2022-02-26_3](https://user-images.githubusercontent.com/66637696/155880771-4fe7d06f-9cba-4257-9bb6-25dd6865918b.png)
-<br>
+
 
 ```
 I set up all the html files and made login/registration for the user.
@@ -111,6 +111,7 @@ The most important thing is to do the filtering. To do this,
 you need to create the product model, specify the url for the tab with filtering,
 and create a views file to pass the filtered products to the template.
 ```
+
 ![2022-02-26_4](https://user-images.githubusercontent.com/66637696/155880784-ab21dbb5-15c0-452a-8fde-3c53663549af.png)
 
 
@@ -119,6 +120,7 @@ After that, you need to include a code block to display all elements (filtered)
 Using a normal loop, we loop through all the filtered elements and display them on the page.
 We use the same algorithm to filter clothing sets (Figure 4).
 ```
+
 ![2022-02-26_5](https://user-images.githubusercontent.com/66637696/155880792-7dd69e10-c19f-417e-8df2-7fa6317d06bd.png)
 
 
@@ -129,7 +131,7 @@ Picking up any thing that fits the wardrobe is not an easy task for everyone. In
 we have created a website that helps people search for clothes by parameters in a convenient form (sets),<br>
 in order to understand whether one or another item of clothing fits another.<br>
 This site will allow buyers to purchase goods from sets according to the parameters and filters of interest.<br>
-```
+
 
 ``Bibliography:``
 ```
