@@ -33,7 +33,7 @@ It is getting more and more difficult to make a choice, but you still want to dr
 Ready-made sets with various filtering by clothing selection parameters simplify the search problem and save a lot of time.
 ```
 
-``Hardware and software (resources) ``
+`Hardware and software (resources) `
 
 ⦁ Laptop 
 ⦁ Python programming language, Django, layout tools 
