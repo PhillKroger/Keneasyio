@@ -28,7 +28,9 @@ Tasks:
 
 ``Hypothesis``
 ```
-Finding the right look can take a very long time due to the huge variety of clothes and shoes. It is getting more and more difficult to make a choice, but you still want to dress uniquely and stylishly. Ready-made sets with various filtering by clothing selection parameters simplify the search problem and save a lot of time.
+Finding the right look can take a very long time due to the huge variety of clothes and shoes.
+It is getting more and more difficult to make a choice, but you still want to dress uniquely and stylishly.
+Ready-made sets with various filtering by clothing selection parameters simplify the search problem and save a lot of time.
 ```
 
 ``Hardware and software (resources) ``
@@ -39,7 +41,10 @@ Finding the right look can take a very long time due to the huge variety of clot
 ```
 
 ```
-Description of work ⦁ The main components of any website are content and design. The main task of design is to create a convenient and intuitive interface, which we will talk about first. The main page contains basic information with main links (Fig. 1.). Header - top of the page with possible links:
+Description of work ⦁ The main components of any website are content and design.
+The main task of design is to create a convenient and intuitive interface,
+which we will talk about first. The main page contains basic information
+with main links (Fig. 1.). Header - top of the page with possible links:
 ```
 
 ```
@@ -54,7 +59,9 @@ Logout / Sign in / Sign up - logout / login / registration.
 
 ```
 ⦁ User profile (Fig. 2.).
-  On the user profile page, his nickname and mail are shown at the top (the username is also indicated in the site header). Below is a link to a page to create a post. At the very bottom, all notes-posts of the user are shown.
+  On the user profile page, his nickname and mail are shown at the top
+  (the username is also indicated in the site header). Below is a link to a page to create a post.
+  At the very bottom, all notes-posts of the user are shown.
 Next, the user's cart, comments and likes will be implemented
 ```
 
@@ -62,7 +69,8 @@ Next, the user's cart, comments and likes will be implemented
 
 ```
 ⦁ Page with all products (Fig. 3.).
-This page with all the products on the site, which can be filtered by three parameters: season, size, price. You can set only 3 optional search parameters
+This page with all the products on the site, which can be filtered by 
+three parameters: season, size, price. You can set only 3 optional search parameters
 The product card is very simple. It contains basic information about the product.
 ```
 
@@ -70,7 +78,10 @@ The product card is very simple. It contains basic information about the product
 
 ```
 ⦁ A page displaying all the sets on the site.
-Not only users, but also shops will be registered on the site. This page displays all sets of all stores in order. Further comments and likes will be attached to the sets to promote the best sets. All images show template pictures of clothes (Fig. 4.). This was done for convenience.
+Not only users, but also shops will be registered on the site. This page
+displays all sets of all stores in order. Further comments and likes will
+be attached to the sets to promote the best sets.
+All images show template pictures of clothes (Fig. 4.). This was done for convenience.
 ```
 
 ![2022-02-26_2](https://user-images.githubusercontent.com/66637696/155880711-0cfcb1b7-2c4c-4e5b-851b-ddb1752ab8de.png)
@@ -78,7 +89,8 @@ Not only users, but also shops will be registered on the site. This page display
 
 ```
 5. Description of site development.
-From the very beginning, I created a skeleton site in Django. After that I created a user model for registration, login and profile.
+From the very beginning, I created a skeleton site in Django.
+After that I created a user model for registration, login and profile.
 The photo shows the user model in the project
 ```
 
@@ -95,23 +107,30 @@ The photo shows the base.html file code
 
 ```
 I set up all the html files and made login/registration for the user.
-I started to display all the data using the views file, where I indicated the directory of my pages.
-The most important thing is to do the filtering. To do this, you need to create the product model, specify the url for the tab with filtering, and create a views file to pass the filtered products to the template.
+I started to display all the data using the views file,
+where I indicated the directory of my pages.
+The most important thing is to do the filtering. To do this,
+you need to create the product model, specify the url for the tab with filtering,
+and create a views file to pass the filtered products to the template.
 ```
 ![2022-02-26_4](https://user-images.githubusercontent.com/66637696/155880784-ab21dbb5-15c0-452a-8fde-3c53663549af.png)
 
 
 ```
 After that, you need to include a code block to display all elements (filtered)
-Using a normal loop, we loop through all the filtered elements and display them on the page. We use the same algorithm to filter clothing sets (Figure 4).
-![2022-02-26_5](https://user-images.githubusercontent.com/66637696/155880792-7dd69e10-c19f-417e-8df2-7fa6317d06bd.png)
+Using a normal loop, we loop through all the filtered elements and display them on the page.
+We use the same algorithm to filter clothing sets (Figure 4).
 ```
+![2022-02-26_5](https://user-images.githubusercontent.com/66637696/155880792-7dd69e10-c19f-417e-8df2-7fa6317d06bd.png)
 
 
 ``Output``
 
 ```
-Finding the right image takes a very long time due to the enormous variety of clothes and shoes. Picking up any thing that fits the wardrobe is not an easy task for everyone. In this regard, we have created a website that helps people search for clothes by parameters in a convenient form (sets), in order to understand whether one or another item of clothing fits another.
+Finding the right image takes a very long time due to the enormous variety of clothes and shoes.
+Picking up any thing that fits the wardrobe is not an easy task for everyone. In this regard,
+we have created a website that helps people search for clothes by parameters in a convenient form (sets),
+in order to understand whether one or another item of clothing fits another.
 This site will allow buyers to purchase goods from sets according to the parameters and filters of interest.
 ```
 
