@@ -135,14 +135,14 @@ This site will allow buyers to purchase goods from sets according to the paramet
 
 ``Bibliography:``
 ```
-1. Programming. Python. C++. Part 3: textbook / K. Yu. Polyakov. — M. : BINOM. Knowledge Laboratory, 2019.
-2. Programming. Python. C++. Part 4: textbook / K. Yu. Polyakov. — M. : BINOM. Knowledge Laboratory, 2019.
-3. Programming in Python 3 A detailed guide. / Summerfield M. - Per. from English. - St. Petersburg: Symbol Plus, 2009 - 608 p.
-4. Learning Python, 3rd edition / Lutz M. - Per. from English. - St. Petersburg: Symbol
-Plus, 2009
-5. HTML and CSS. Development and design of websites / John Duckett - Per. from English. - St. Petersburg: Symbol Plus, 2013 - 514 p.
-6.https://itproger.com/practice/javascript
-7. Learning JavaScript Programming / Eric Freeman, Robson
-Elizabeth, 2018 - 640 p.
-8. Django - The Easy Way (3rd Edition): How to build and deploy web applications with Python and Django/ Samuli Natri - 2020 - 349 pp.
+1. Programming. Python. C++. Part 3: textbook / K. Yu. Polyakov. — M. : BINOM. Knowledge Laboratory, 2019.<br>
+2. Programming. Python. C++. Part 4: textbook / K. Yu. Polyakov. — M. : BINOM. Knowledge Laboratory, 2019.<br>
+3. Programming in Python 3 A detailed guide. / Summerfield M. - Per. from English. - St. Petersburg: Symbol Plus, 2009 - 608 p.<br>
+4. Learning Python, 3rd edition / Lutz M. - Per. from English. - St. Petersburg: Symbol<br>
+Plus, 2009<br>
+5. HTML and CSS. Development and design of websites / John Duckett - Per. from English. - St. Petersburg: Symbol Plus, 2013 - 514 p.<br>
+6.https://itproger.com/practice/javascript<br>
+7. Learning JavaScript Programming / Eric Freeman, Robson<br>
+Elizabeth, 2018 - 640 p.<br>
+8. Django - The Easy Way (3rd Edition): How to build and deploy web applications with Python and Django/ Samuli Natri - 2020 - 349 pp.<br>
 ```
