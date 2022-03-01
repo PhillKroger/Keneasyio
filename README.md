@@ -28,6 +28,7 @@ Tasks:<br>
 
 
 ``Hypothesis``
+
 ```
 Finding the right look can take a very long time due to the huge variety of clothes and shoes.
 It is getting more and more difficult to make a choice, but you still want to dress uniquely and stylishly.
