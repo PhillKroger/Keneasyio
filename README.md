@@ -1,6 +1,7 @@
 # Keneasy.io
 
 ``Introduction``
+
 ```
 The modern world provides a huge variety of different products, goods and services.
 This is especially noticeable when we go to shopping centers or online stores.
@@ -35,7 +36,7 @@ It is getting more and more difficult to make a choice, but you still want to dr
 Ready-made sets with various filtering by clothing selection parameters simplify the search problem and save a lot of time.
 ```
 
-`Hardware and software (resources) `
+``Hardware and software (resources)``
 
 ⦁ Laptop <br>
 ⦁ Python programming language, Django, layout tools <br>
@@ -52,7 +53,6 @@ Filter - page with the main functionality of the project;<br>
 Profile - link to the user profile;<br>
 Logout / Sign in / Sign up - logout / login / registration.<br><br>
 
-
 ![home](https://user-images.githubusercontent.com/66637696/153063419-dcbe464d-960a-422d-a7df-16fa38868b79.png)
 
 ```
@@ -66,7 +66,7 @@ Next, the user's cart, comments and likes will be implemented
 ![profile](https://user-images.githubusercontent.com/66637696/153063501-6188378e-fcee-492b-8505-1041a370d734.png)
 
 ```
-⦁ Page with all products (Fig. 3.).
+Page with all products (Fig. 3.).
 This page with all the products on the site, which can be filtered by 
 three parameters: season, size, price. You can set only 3 optional search parameters
 The product card is very simple. It contains basic information about the product.
@@ -84,7 +84,6 @@ All images show template pictures of clothes (Fig. 4.). This was done for conven
 
 ![2022-02-26_2](https://user-images.githubusercontent.com/66637696/155880711-0cfcb1b7-2c4c-4e5b-851b-ddb1752ab8de.png)
 
-
 ```
 5. Description of site development.
 From the very beginning, I created a skeleton site in Django.
@@ -94,7 +93,6 @@ The photo shows the user model in the project
 
 ![2022-02-26_1](https://user-images.githubusercontent.com/66637696/155880758-abfa1f1f-730f-41ed-8282-c303ad8f45f3.png)
 
-
 ```
 After that I created a base.html file which is templated. I used his framework in all other files.
   {% block content%}{% endblock %} - this construction is used to pass other data there
@@ -102,7 +100,6 @@ The photo shows the base.html file code
 ```
 
 ![2022-02-26_3](https://user-images.githubusercontent.com/66637696/155880771-4fe7d06f-9cba-4257-9bb6-25dd6865918b.png)
-
 
 ```
 I set up all the html files and made login/registration for the user.
@@ -115,7 +112,6 @@ and create a views file to pass the filtered products to the template.
 
 ![2022-02-26_4](https://user-images.githubusercontent.com/66637696/155880784-ab21dbb5-15c0-452a-8fde-3c53663549af.png)
 
-
 ```
 After that, you need to include a code block to display all elements (filtered)
 Using a normal loop, we loop through all the filtered elements and display them on the page.
@@ -123,7 +119,6 @@ We use the same algorithm to filter clothing sets (Figure 4).
 ```
 
 ![2022-02-26_5](https://user-images.githubusercontent.com/66637696/155880792-7dd69e10-c19f-417e-8df2-7fa6317d06bd.png)
-
 
 ``Output``
 
@@ -135,6 +130,7 @@ This site will allow buyers to purchase goods from sets according to the paramet
 
 
 ``Bibliography:``
+
 ```
 1. Programming. Python. C++. Part 3: textbook / K. Yu. Polyakov. — M. : BINOM. Knowledge Laboratory, 2019.<br>
 2. Programming. Python. C++. Part 4: textbook / K. Yu. Polyakov. — M. : BINOM. Knowledge Laboratory, 2019.<br>
