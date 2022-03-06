@@ -128,7 +128,6 @@ we have created a website that helps people search for clothes by parameters in 
 in order to understand whether one or another item of clothing fits another.<br>
 This site will allow buyers to purchase goods from sets according to the parameters and filters of interest.<br>
 
-
 ``Bibliography:``
 
 ```
