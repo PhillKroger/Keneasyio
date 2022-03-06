@@ -68,5 +68,3 @@ class ProductListView(ListView):
         c = super().get_context_data(**kwargs)
         c['filter'] = ProductFilter(self.request.GET, queryset=self.get_queryset())
         return c
-
-

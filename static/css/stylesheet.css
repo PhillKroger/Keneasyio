@@ -1,7 +1,12 @@
+
 .all-prd {
     padding-left: 20%;
     padding-right: 20%;
 }
+
+.all-prd {padding-left: 20%;padding-right: 20%;}
+
+
 .prd-slot {
     background-color: #ffffff;
     margin: 10px;
@@ -111,7 +116,6 @@ body {background: #f5f7f8 !important;}
 
 .header {
     background-color: #7C83FD;
-    padding-bottom: 0px;
 }
 
 ul {
@@ -135,7 +139,6 @@ ul li a {
 
 .logo {
     margin-left: 50px;
-    margin-top: 0px;
     float: right;
 }
 
@@ -378,7 +381,6 @@ footer {
 
     .photo-second2-page {
         float: right;
-        margin-bottom: 0px;
         border-radius: 30px;
         width: 450px;
     }
@@ -432,7 +434,6 @@ footer {
 
 @media all and (max-width: 770px) {
     .photo-first-page {
-        padding-right: 0px;
         float: left;
         width: 370px;
     }
@@ -490,5 +491,17 @@ footer {
     .first {
         margin-top: 100px;
     }
+}
+
+@media all and (max-width: 550px) {
+}
+
+@media all and (max-width: 475px) {
+}
+
+@media all and (max-width: 400px) {
+}
+
+@media all and (max-width: 320px) {
 }
 
