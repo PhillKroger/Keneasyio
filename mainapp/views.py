@@ -52,13 +52,11 @@ class ProductListView(ListView):
     template_name = 'products/filter.html'
     # queryset = Product.objects.filter(draft=False)
 
-
     def get_queryset(self):
         query = self.request.GET.get('search')
         p = Product.objects.all()
-        # b = Product.objects.filter().values('category_clothes', 'category_price', 'category_season', 'category_size', 'slug')
+        # b = Product.objects.filter().values('category_clothes', 'category_price')
         # l = [value for value in b if isinstance(value, dict)]
-        # print(l)
 
         if query:
             pn = Product.objects.filter(name__icontains=query)
@@ -70,4 +68,5 @@ class ProductListView(ListView):
         c = super().get_context_data(**kwargs)
         c['filter'] = ProductFilter(self.request.GET, queryset=self.get_queryset())
         return c
+
 

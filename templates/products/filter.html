@@ -31,10 +31,8 @@
     <div class="all-prd">
         {% if filter.qs %}
             {% for product in filter.qs %}
-
                 <div class="prd-slot">
                     <img src="{{ product.category_clothes.img.url }}" alt="" class="prd-img">
-
                     <table>
                         <tr>
                             <td><p class="prd-d">Season </p></td>
@@ -53,9 +51,7 @@
                             <td><p class="prd-d-4">{{ product.category_price }}  </p></td>
                         </tr>
                     </table>
-
                     <p class="btn-third"><b style="text-align: center;">В корзину</b></p>
-
                 </div>
 
             {% endfor %}

@@ -10,11 +10,11 @@
 
 {% block content %}
 
-    {% include 'menu.html' %}<br><br>
+    {% include 'menu.html' %}
 
     <div style="padding-left: 20%;padding-right: 20%;">
     {% for set in sets %}
-        <br><br><br><br>
+        <br><br>
         <p class="prd-d-1">{{ set.name }}</p>
         {% for v in set.pr.all %}
             <div class="prd-slot">
