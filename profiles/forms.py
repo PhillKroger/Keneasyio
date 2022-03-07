@@ -56,3 +56,4 @@ class UserRegistrationForm(forms.ModelForm):
         if data['password'] != data['password2']:
             raise forms.ValidationError("Passwords do not match")
         return data["password2"]
+

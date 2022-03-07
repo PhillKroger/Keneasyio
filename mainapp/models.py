@@ -63,8 +63,10 @@ class Product(models.Model):
 
 
 class Post(models.Model):
-    title = models.CharField("Title", max_length=50, null=True)
+    title = models.CharField("phone", max_length=50, null=True)
+    email = models.CharField("email", max_length=50, null=True)
     text = RichTextField("Text", null=True)
+    file = models.ImageField(verbose_name='verify doc', upload_to='media/docx', null=True, blank=True)
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     num = models.IntegerField(null=True, blank=True, default=0)
 

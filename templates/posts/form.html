@@ -15,13 +15,13 @@
     </div> <br><br><br><br>
 
     <div class="post_form_div" style="padding-left: 20%;">
-        <h1 class="h1_post_create">Post creating</h1><br><br>
+        <h1 class="h1_post_create">Verifying account</h1><br><br>
         <form method="post">
             {% csrf_token %}
             {{form.media}}
             {{form.as_p}}
             <button type="submit" class="post_form_button">
-                <p class="text_button">post</p>
+                <p class="text_button">Do it</p>
             </button>
         </form>
     </div>

@@ -25,7 +25,7 @@
         {% if request.user.is_authenticated %}
           <ul style="text-align: center;">
             <li><h4><a href="/" style="text-decoration: none;">home</a></h4></li>
-            <li><h4><a href="http://127.0.0.1:8000/about/" style="text-decoration: none;">about</a></h4></li>
+            <!--<li><h4><a href="http://127.0.0.1:8000/about/" style="text-decoration: none;">about</a></h4></li>-->
             <li><h4><a href="http://127.0.0.1:8000/filter/" style="text-decoration: none;">filter</a></h4></li>
             <li><h4><a href="http://127.0.0.1:8000/sets/" style="text-decoration: none;">sets</a></h4></li>
             <li><h4><a href="{% url 'profiles:profile' %}" style="text-decoration: none;">profile</a></h4></li>
@@ -33,14 +33,15 @@
             <img src="https://www.shareicon.net/data/512x512/2016/08/05/806962_user_512x512.png" width="70px" style="border-radius: 90px;padding-right: 10px;">
             <li><h4>{{ user.username }}</h4></li>
           </ul>
+
               {% else %}
                 <ul style="text-align: center;">
-                <li><h4><a href="/" style="text-decoration: none;">home</a></h4></li>
-                <li><h4><a href="http://127.0.0.1:8000/about/" style="text-decoration: none;">about</a></h4></li>
-                <li><h4><a href="http://127.0.0.1:8000/filter/" style="text-decoration: none;">filter</a></h4></li>
-                <li><h4><a href="{% url 'profiles:login' %}" style="text-decoration: none;">sign in</a></h4></li>
-                <li><h4><a href="{% url 'profiles:register' %}" style="text-decoration: none;">sign up</a></h4></li>
-                  </ul>
+                  <li><h4><a href="/" style="text-decoration: none;">home</a></h4></li>
+                  <!--<li><h4><a href="http://127.0.0.1:8000/about/" style="text-decoration: none;">about</a></h4></li>-->
+                  <li><h4><a href="http://127.0.0.1:8000/filter/" style="text-decoration: none;">filter</a></h4></li>
+                  <li><h4><a href="{% url 'profiles:login' %}" style="text-decoration: none;">sign in</a></h4></li>
+                  <li><h4><a href="{% url 'profiles:register' %}" style="text-decoration: none;">sign up</a></h4></li>
+                </ul>
             {% endif %}
     </div>
 

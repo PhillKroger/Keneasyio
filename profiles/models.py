@@ -37,7 +37,7 @@ class MyUserManager(BaseUserManager):
 class User(AbstractBaseUser):
     email = models.EmailField(verbose_name='email address', max_length=255, unique=True)
     username = models.CharField(verbose_name='username', max_length=20, unique=True)
-
+    verified = models.BooleanField(verbose_name='Verified_user', default=False)
     avatar = models.ImageField(upload_to='media/avatars/', null=True, default='media/avatars/default_avatar.png')
     description = models.TextField(max_length=255, null=True, blank=True)
     user_admin_description = models.TextField(max_length=255, null=True, blank=True)
@@ -67,3 +67,9 @@ class User(AbstractBaseUser):
         "Is the user a member of staff?"
         # Simplest possible answer: All admins are staff
         return self.is_admin
+
+    @property
+    def is_verified(self):
+        "Is the user a member of staff?"
+        # Simplest possible answer: All admins are staff
+        return self.is_verified

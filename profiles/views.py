@@ -11,7 +11,6 @@ from django.contrib.auth import authenticate
 
 User = get_user_model()
 
-
 def login_view(request):
     form = UserLoginForm(request.POST or None)
     if form.is_valid():
