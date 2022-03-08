@@ -4,48 +4,51 @@
 <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 
 {% block content %}
-
     {% include 'menu.html' %}
     <div style="clear: left"></div><br>
 
-    <div class="main_div" style="padding-left: 20%;">
+    {% if request.user.is_admin %}
+        <div class="main_div" style="padding-left: 20%;">
+         <h1 class="profile_username" style="float: left;">{{ user.username }}</h1><img src="http://127.0.0.1:8000/static/admin/img/icon-yes.svg" width="20px" style="padding-top: 15px;margin-left: 5px;">
+        <div style="clear: left"></div>
+        <p class="profile_username">{{ user.email }}</p>
+    </div>
+
+        <!--
+        <div style="padding-left: 20%; padding-right: 20%;">
+        {% for post in user_posts %}
+            <div class="profile_post">
+                <div class="profile_post_text_div">
+                    <div class="profile_post_text_div__inner">
+                        <h1>{{ post.title|safe }}</h1>
+                        <p class="profile_post_text">
+                            {{ post.text|safe }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <hr>
+        {% endfor %}
+        </div>-->
+
+    {% else %}
+     <div class="main_div" style="padding-left: 20%;">
          <h1 class="profile_username">{{ user.username }}</h1>
         <p class="profile_username">{{ user.email }}</p>
 
-        <div style="padding-left: 20%;padding-right: 20%; " class="werqwer">
+    </div>
+
+    <div style="padding-left: 20%;padding-right: 20%; " class="werqwer">
         <form method="POST">
             <p><!--{{ .form }}-->
                 <h4><a href="{% url 'mainapp:post_create' %}" style="display: inline-block;background: #7b81f5;color: #fff;padding: 12px;margin-left: 10px; border: none;border-radius: 3px;text-decoration: none;font-family: Tahoma,serif;font-size: 18px;line-height: 1;font-weight: 100;cursor: pointer;">Verify account</a></h4>
-
             </p>
         </form>
     </div>
+    {% endif %}
 
-    <!--<h4 style="text-decoration: none; color: #333333;"><a href="{% url 'mainapp:post_create' %}" style="text-decoration: none; color: #333333;">✎ Make a note</a></h4>-->
-    <!--<button type="submit" style="display: inline-block;background: #7b81f5;color: #fff;padding: 12px;margin-left: 10px; border: none;border-radius: 3px;text-decoration: none;font-family: Tahoma,serif;font-size: 18px;line-height: 1;font-weight: 100;cursor: pointer;">Verify</button>-->
-
-    </div>
-<br><br>
-
-
-    <br><br><br><br>
-
-    <!--
-    <div style="padding-left: 20%; padding-right: 20%;">
-    {% for post in user_posts %}
-        <div class="profile_post">
-            <div class="profile_post_text_div">
-                <div class="profile_post_text_div__inner">
-                    <h1>{{ post.title|safe }}</h1>
-                    <p class="profile_post_text">
-                        {{ post.text|safe }}
-                    </p>
-                </div>
-            </div>
-        </div>
-        <br>
-        <hr>
-    {% endfor %}
-    </div>
-    -->
 {% endblock %}
+
+ <!--<h4 style="text-decoration: none; color: #333333;"><a href="{% url 'mainapp:post_create' %}" style="text-decoration: none; color: #333333;">✎ Make a note</a></h4>-->
+    <!--<button type="submit" style="display: inline-block;background: #7b81f5;color: #fff;padding: 12px;margin-left: 10px; border: none;border-radius: 3px;text-decoration: none;font-family: Tahoma,serif;font-size: 18px;line-height: 1;font-weight: 100;cursor: pointer;">Verify</button>-->

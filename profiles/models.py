@@ -30,6 +30,7 @@ class MyUserManager(BaseUserManager):
             password=password
         )
         user.is_admin = True
+        user.is_verify = True
         user.save(using=self._db)
         return user
 
@@ -69,7 +70,7 @@ class User(AbstractBaseUser):
         return self.is_admin
 
     @property
-    def is_verified(self):
+    def is_verify(self):
         "Is the user a member of staff?"
         # Simplest possible answer: All admins are staff
-        return self.is_verified
+        return self.is_verify
