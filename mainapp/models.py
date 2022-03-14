@@ -57,6 +57,7 @@ class Product(models.Model):
     color = models.CharField(max_length=255, verbose_name='color', null=True)
     product_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     slug = models.SlugField(unique=True, null=True)
+    # author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, null=True)
 
     def __str__(self):
         return '{} {} {} {}'.format(self.slug, self.category_season, self.category_clothes, self.category_size)
