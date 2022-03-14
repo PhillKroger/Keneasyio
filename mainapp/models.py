@@ -47,22 +47,6 @@ class CategoryImage(models.Model):
         return "{}".format(self.img)
 
 
-class Product(models.Model):
-    img = models.ImageField(verbose_name='img', upload_to='media/', null=True, blank=True)
-    category_season = models.ForeignKey(CategorySeason, verbose_name='category_season', on_delete=models.CASCADE, blank=True, null=True)
-    category_image = models.ForeignKey(CategoryImage, verbose_name='category_Image', on_delete=models.CASCADE, blank=True, null=True)
-    category_clothes = models.ForeignKey(CategoryClothes, verbose_name='category_clothes', on_delete=models.CASCADE, blank=True, null=True)
-    category_size = models.ForeignKey(CategorySize, verbose_name='category_size', on_delete=models.CASCADE, blank=True, null=True)
-    category_price = models.ForeignKey(CategoryPrice, verbose_name='category_price', on_delete=models.CASCADE, blank=True, null=True)
-    color = models.CharField(max_length=255, verbose_name='color', null=True)
-    product_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    slug = models.SlugField(unique=True, null=True)
-    # author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, null=True)
-
-    def __str__(self):
-        return '{} {} {} {}'.format(self.slug, self.category_season, self.category_clothes, self.category_size)
-
-
 class Post(models.Model):
     title = models.CharField("phone", max_length=50, null=True)
     email = models.CharField("email", max_length=50, null=True)
@@ -79,6 +63,22 @@ class Post(models.Model):
         verbose_name_plural = "Posts"
 
 
+class Product(models.Model):
+    img = models.ImageField(verbose_name='img', upload_to='media/', null=True, blank=True)
+    category_season = models.ForeignKey(CategorySeason, verbose_name='category_season', on_delete=models.CASCADE, blank=True, null=True)
+    category_image = models.ForeignKey(CategoryImage, verbose_name='category_Image', on_delete=models.CASCADE, blank=True, null=True)
+    category_clothes = models.ForeignKey(CategoryClothes, verbose_name='category_clothes', on_delete=models.CASCADE, blank=True, null=True)
+    category_size = models.ForeignKey(CategorySize, verbose_name='category_size', on_delete=models.CASCADE, blank=True, null=True)
+    category_price = models.ForeignKey(CategoryPrice, verbose_name='category_price', on_delete=models.CASCADE, blank=True, null=True)
+    color = models.CharField(max_length=255, verbose_name='color', null=True)
+    product_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    slug = models.SlugField(unique=True, null=True)
+    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, null=True)
+
+    def __str__(self):
+        return '{} {} {} {} {}'.format(self.author, self.slug, self.category_season, self.category_clothes, self.category_size)
+
+
 class Set(models.Model):
     name = models.CharField(max_length=255, verbose_name='Name', null=True)
     set_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
@@ -90,3 +90,5 @@ class Set(models.Model):
     class Meta:
         verbose_name = "Set"
         verbose_name_plural = "Sets"
+
+

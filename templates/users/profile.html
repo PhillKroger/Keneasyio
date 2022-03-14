@@ -9,27 +9,20 @@
 
     {% if request.user.is_admin %}
         <div class="main_div" style="padding-left: 20%;">
-         <h1 class="profile_username" style="float: left;">{{ user.username }}</h1><img src="http://127.0.0.1:8000/static/admin/img/icon-yes.svg" width="20px" style="padding-top: 15px;margin-left: 5px;">
-        <div style="clear: left"></div>
-        <p class="profile_username">{{ user.email }}</p>
-    </div>
+            <h1 class="profile_username" style="float: left;">{{ user.username }}</h1><img src="http://127.0.0.1:8000/static/admin/img/icon-yes.svg" width="20px" style="padding-top: 15px;margin-left: 5px;">
+            <div style="clear: left"></div>
+            <p class="profile_username">{{ user.email }}</p>
+        </div>
 
-    <div style="padding-left: 20%;padding-right: 20%; " class="werqwer">
-        <form method="POST">
-            <p>
-                <h4><a href="{% url 'mainapp:post_create' %}" style="display: inline-block;background: #7b81f5;color: #fff;padding: 12px;margin-left: 10px; border: none;border-radius: 3px;text-decoration: none;font-family: Tahoma,serif;font-size: 18px;line-height: 1;font-weight: 100;cursor: pointer;">Create set</a></h4>
-            </p>
-        </form>
-    </div>
         <!--
         <div style="padding-left: 20%; padding-right: 20%;">
-        {% for post in user_posts %}
+        {% for product in products %}
             <div class="profile_post">
                 <div class="profile_post_text_div">
                     <div class="profile_post_text_div__inner">
-                        <h1>{{ post.title|safe }}</h1>
+                        <h1>{{ product.category_season|safe }}</h1>
                         <p class="profile_post_text">
-                            {{ post.text|safe }}
+                            {{ product.category_price|safe }}
                         </p>
                     </div>
                 </div>
@@ -37,7 +30,8 @@
             <br>
             <hr>
         {% endfor %}
-        </div>-->
+        </div>
+        -->
 
     {% else %}
      <div class="main_div" style="padding-left: 20%;">
