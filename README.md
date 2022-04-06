@@ -1,6 +1,6 @@
 # [Keneasy.io](http://keneasy.io/)
 
-# [Keneasy.io](http://keneasy.io/)
+
 
 `Introduction`
 
