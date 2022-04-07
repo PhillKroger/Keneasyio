@@ -1,7 +1,5 @@
 # [Keneasy.io](http://keneasy.io/)
 
-
-
 `Introduction`
 
 ```
