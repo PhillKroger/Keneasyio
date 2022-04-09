@@ -1,4 +1,4 @@
-# [Keneasy.io](http://keneasy.io/)
+# Keneasy.io
 
 `Introduction`
 
