@@ -135,6 +135,3 @@ Picking up any thing that fits the wardrobe is not an easy task for everyone. In
 we have created a website that helps people search for clothes by parameters in a convenient form (sets),<br>
 in order to understand whether one or another item of clothing fits another.<br>
 This site will allow buyers to purchase goods from sets according to the parameters and filters of interest.<br>
-
-`Bibliography:`
-
