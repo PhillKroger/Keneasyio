@@ -128,7 +128,7 @@ We use the same algorithm to filter clothing sets (Figure 4).
 
 ![https://user-images.githubusercontent.com/66637696/155880792-7dd69e10-c19f-417e-8df2-7fa6317d06bd.png](https://user-images.githubusercontent.com/66637696/155880792-7dd69e10-c19f-417e-8df2-7fa6317d06bd.png)
 
-`Output`
+`Conclusion`
 
 Finding the right image takes a very long time due to the enormous variety of clothes and shoes.<br>
 Picking up any thing that fits the wardrobe is not an easy task for everyone. In this regard,<br>
