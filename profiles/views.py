@@ -51,23 +51,24 @@ def user_account(request):
     if not request.user.is_authenticated:
         return redirect('/')
     else:
-
-        email = request.user
-        user = User.objects.get(email=email)
-
-        user_posts = Post.objects.filter(author=user).order_by('-id')[:5]
-        page = request.GET.get('page', 1)
-        paginator = Paginator(user_posts, 20)
-        try:
-            post_list = paginator.page(page)
-        except PageNotAnInteger:
-            post_list = paginator.page(1)
-        except EmptyPage:
-            post_list = paginator.page(paginator.num_pages)
-
+        if request.user.is_admin:
+            email = request.user
+            user = User.objects.get(email=email)
+            user_products = Product.objects.all()  # filter(author=user).order_by('-id')[:5]
+            return render(request, 'users/profile.html', {'user': user, 'user_products': user_products})
         else:
-
-            return render(request, 'users/profile.html', {'user': user, 'user_posts': post_list}) # , 'user_posts': post_list
+            email = request.user
+            user = User.objects.get(email=email)
+            user_posts = Product.objects.filter(author=user)  # .order_by("-pubdate")
+            page = request.GET.get('page', 1)
+            paginator = Paginator(user_posts, 20)
+            try:
+                post_list = paginator.page(page)
+            except PageNotAnInteger:
+                post_list = paginator.page(1)
+            except EmptyPage:
+                post_list = paginator.page(paginator.num_pages)
+            return render(request, 'users/profile.html', {'user': user, 'user_posts': post_list})
 
 
 def other_account(request, account_id):

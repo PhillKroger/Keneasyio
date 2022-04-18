@@ -4,7 +4,7 @@ from django.views.generic import ListView
 from .filters import ProductFilter
 from .models import Product, CategoryPrice
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
-from .forms import PostForm
+from .forms import PostForm, ProductForm, SetForm
 from django.shortcuts import render, redirect
 import datetime
 from .models import *
@@ -32,6 +32,30 @@ def post_create(request):
 
     return render(request, 'posts/form.html', {'form': form})
 
+
+def product_create(request):
+    form = ProductForm(request.POST or None)
+    if request.method == 'POST':
+        if form.is_valid():
+            product = form.save(commit=False)
+            product.author = request.user
+            product.pubdate = datetime.datetime.now()
+            product.save()
+            form = ProductForm()
+            return redirect('/profile/')
+    return render(request, 'products/form.html', {'form': form})
+
+def set_create(request):
+    form = SetForm(request.POST or None)
+    if request.method == 'POST':
+        if form.is_valid():
+            set = form.save(commit=False)
+            set.author = request.user
+            set.save()
+            form = SetForm()
+            return redirect('/profile/')
+
+    return render(request, 'sets/form.html', {'form': form})
 
 def sets(request):
     sets = Set.objects.all()
