@@ -32,7 +32,7 @@ def post_create(request):
 
     return render(request, 'posts/form.html', {'form': form})
 
-# new
+
 def product_create(request):
     form = ProductForm(request.POST or None)
     if request.method == 'POST':
@@ -47,19 +47,6 @@ def product_create(request):
 
     return render(request, 'products/form.html', {'form': form})
 
-
-
-def product_create(request):
-    form = ProductForm(request.POST or None)
-    if request.method == 'POST':
-        if form.is_valid():
-            product = form.save(commit=False)
-            product.author = request.user
-            product.pubdate = datetime.datetime.now()
-            product.save()
-            form = ProductForm()
-            return redirect('/profile/')
-    return render(request, 'products/form.html', {'form': form})
 
 def set_create(request):
     form = SetForm(request.POST or None)
