@@ -4,32 +4,47 @@
         <link rel="stylesheet" type="text/css" href="{% static 'css/stylesheet.css' %}">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <meta charset="utf-8">
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     </head>
     <body>
 
-        <div class="header">
-            {% if request.user.is_authenticated %}
-                <ul style="text-align: center;">
-                    <li><h4><a href="/">home</a></h4></li>
-                    <li><h4><a href="http://127.0.0.1:8000/filter/">filter</a></h4></li>
-                    <li><h4><a href="http://127.0.0.1:8000/sets/">sets</a></h4></li>
-                    <li><h4><a href="{% url 'profiles:profile' %}">profile</a></h4></li>
-                    <li><h4><a href="{% url 'profiles:logout' %}">logout</a></h4></li>
-                    <img src="https://www.shareicon.net/data/512x512/2016/08/05/806962_user_512x512.png" width="70px" style="border-radius: 90px;padding-right: 10px;">
-                    <li><h4>{{ user.username }}#0001</h4></li>
+
+    <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="/" class="nav__logo">Keneasyio</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        {% if request.user.is_authenticated %}
+                            <li class="nav__item"><a href="http://127.0.0.1:8000/filter/" class="nav__link">filter</a></li>
+                            <li class="nav__item"><a href="http://127.0.0.1:8000/sets/" class="nav__link">sets</a></li>
+                            <li class="nav__item"><a href="{% url 'profiles:profile' %}" class="nav__link">profile</a></li>
+                            <li class="nav__item"><a href="{% url 'profiles:logout' %}" class="nav__link">logout</a></li>
+                        {% else %}
+                            <li class="nav__item"><a href="http://127.0.0.1:8000/filter/" class="nav__link">filter</a></li>
+                            <li class="nav__item"><a href="{% url 'profiles:login' %}" class="nav__link">sign in</a></li>
+                            <li class="nav__item"><a href="{% url 'profiles:register' %}" class="nav__link">sign up</a></li>
+                        {% endif %}
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <br><br>
 
 
-            </ul>
-            {% else %}
-                <ul style="text-align: center;">
-                    <li><h4><a href="/">home</a></h4></li>
-                    <!--<li><h4><a href="http://127.0.0.1:8000/about/" style="text-decoration: none;">about</a></h4></li>-->
-                    <li><h4><a href="http://127.0.0.1:8000/filter/">filter</a></h4></li>
-                    <li><h4><a href="{% url 'profiles:login' %}">sign in</a></h4></li>
-                    <li><h4><a href="{% url 'profiles:register' %}">sign up</a></h4></li>
-                </ul>
-            {% endif %}
+    <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
 
-        </div>
+        <!--===== MAIN JS =====-->
+        <script src="js/main.js"></script>
+
+
     </body>
 </html>
