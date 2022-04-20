@@ -1,5 +1,5 @@
 from django import forms
-from .models import Post, Set, Product
+from .models import *
 from ckeditor.widgets import CKEditorWidget
 
 

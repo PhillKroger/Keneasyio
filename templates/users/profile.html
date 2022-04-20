@@ -5,8 +5,8 @@
 
 {% block content %}
     {% include 'menu.html' %}
-    <div style="clear: left"></div><br>
-
+    <div style="clear: left"></div>
+    <br><br>
     {% if request.user.is_admin %}
         <div class="main_div" style="padding-left: 20%;">
             <h1 class="profile_username" style="float: left;">{{ user.username }}</h1><img src="http://127.0.0.1:8000/static/admin/img/icon-yes.svg" width="20px" style="padding-top: 15px;margin-left: 5px;">
