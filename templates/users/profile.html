@@ -10,14 +10,19 @@
     <div style="clear: left"></div><br><br>
 
     {% if request.user.is_admin %}
+
         <div class="main_div" style="padding-left: 20%;">
-            <h1 class="nav__logo" style="float: left;">{{ user.username }}</h1>
-            <img src="http://127.0.0.1:8000/static/admin/img/icon-yes.svg" width="20px" style="padding-top: 15px;margin-left: 5px;">
+            <h1 class="nav__logo" style="float: left;">{{ user.username }}</h1><p class="verified-user">verified</p>
             <div style="clear: left"></div>
-            <p class="profile_username">{{ user.email }}</p>
+            <p class="user-products-count">{{ products.count }} products</p>
+            <div style="clear: left"></div><br>
+             <h4><a href="http://127.0.0.1:8000/create_product/" class="user-create"> create product</a></h4>
+            <h4><a href="http://127.0.0.1:8000/create_set/" class="user-create"> create set</a></h4>
+            <br>
+
             <div style="clear: left"></div>
-            <h4><a href="http://127.0.0.1:8000/create_product/" style="text-decoration: none; color: #7b81f5;"> create product</a></h4>
-            <h4><a href="http://127.0.0.1:8000/create_set/" style="text-decoration: none; color: #548cff;"> create set</a></h4>
+
+
         </div>
 
         <div  class="all-prd">

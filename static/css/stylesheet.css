@@ -1,3 +1,30 @@
+.user-create {
+  text-decoration: none;
+  color: #7b81f5;
+  float: left;
+
+
+}
+
+.verified-user {
+  font-family: 'Comfortaa', cursive;
+  width: 10px;
+  float: left;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.user-products-count {
+  font-family: 'Comfortaa', cursive;
+  background-color: #d8d8db;
+  border-radius: 30px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-right: 90%;
+  text-align: left;
+
+}
+
 
 .profile_username {
     float:left;
