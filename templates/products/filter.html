@@ -1,22 +1,15 @@
 {% extends 'base.html' %}
-
 {% load static %}
-
-<title>
-    {% block title %}
-        Keneasyio - filtering
-    {% endblock title %}
-</title>
+<title>{% block title %} Keneasyio - filtering {% endblock title %}</title>
 
 {% block content %}
 
-    {% include 'menu.html' %}
-    <br><br>
+    {% include 'menu.html' %}<br><br>
 
     <div>
-    {% for set in sets %}
-        <p>{{ set.name }}</p>
-    {% endfor %}
+        {% for set in sets %}
+            <p>{{ set.name }}</p>
+        {% endfor %}
     </div>
 
 

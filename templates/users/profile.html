@@ -4,12 +4,15 @@
 <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 
 {% block content %}
+
     {% include 'menu.html' %}
-    <div style="clear: left"></div>
-    <br><br>
+
+    <div style="clear: left"></div><br><br>
+
     {% if request.user.is_admin %}
         <div class="main_div" style="padding-left: 20%;">
-            <h1 class="profile_username" style="float: left;">{{ user.username }}</h1><img src="http://127.0.0.1:8000/static/admin/img/icon-yes.svg" width="20px" style="padding-top: 15px;margin-left: 5px;">
+            <h1 class="nav__logo" style="float: left;">{{ user.username }}</h1>
+            <img src="http://127.0.0.1:8000/static/admin/img/icon-yes.svg" width="20px" style="padding-top: 15px;margin-left: 5px;">
             <div style="clear: left"></div>
             <p class="profile_username">{{ user.email }}</p>
             <div style="clear: left"></div>
@@ -17,43 +20,45 @@
             <h4><a href="http://127.0.0.1:8000/create_set/" style="text-decoration: none; color: #548cff;"> create set</a></h4>
         </div>
 
-
-        <!--
-        <div style="padding-left: 20%; padding-right: 20%;">
-        {% for product in products %}
-            <div class="profile_post">
-                <div class="profile_post_text_div">
-                    <div class="profile_post_text_div__inner">
-                        <h1>{{ product.category_season|safe }}</h1>
-                        <p class="profile_post_text">
-                            {{ product.category_price|safe }}
-                        </p>
-                    </div>
+        <div  class="all-prd">
+            {% for product in products %}
+                <div class="prd-slot">
+                    <img src="{{ product.category_clothes.img.url }}" alt="" class="prd-img">
+                    <table>
+                        <tr>
+                            <td><p class="prd-d">Season </p></td>
+                            <td><p class="prd-d-1"> {{ product.category_season }} </p></td>
+                        </tr>
+                        <tr>
+                            <td><p class="prd-d">Model</p></td>
+                            <td><p class="prd-d-2">{{ product.category_clothes }}</p></td>
+                        </tr>
+                        <tr>
+                            <td><p class="prd-d">Size</p></td>
+                            <td><p class="prd-d-3"> {{ product.category_size }}   </p></td>
+                        </tr>
+                        <tr>
+                            <td><p class="prd-d">Price</p></td>
+                            <td><p class="prd-d-4">{{ product.category_price }}  </p></td>
+                        </tr>
+                    </table>
                 </div>
-            </div>
-            <br>
-            <hr>
-        {% endfor %}
+            {% endfor %}
         </div>
-        -->
 
     {% else %}
-     <div class="main_div" style="padding-left: 20%;">
-         <h1 class="profile_username">{{ user.username }}</h1>
-        <p class="profile_username">{{ user.email }}</p>
+         <div class="main_div" style="padding-left: 20%;">
+             <h1 class="profile_username">{{ user.username }}</h1>
+            <p class="profile_username">{{ user.email }}</p>
+        </div>
 
-    </div>
-
-    <div style="padding-left: 20%;padding-right: 20%; " class="werqwer">
-        <form method="POST">
-            <p>
-                <h4><a href="{% url 'mainapp:post_create' %}" style="display: inline-block;background: #7b81f5;color: #fff;padding: 12px;margin-left: 10px; border: none;border-radius: 3px;text-decoration: none;font-family: Tahoma,serif;font-size: 18px;line-height: 1;font-weight: 100;cursor: pointer;">Verify account</a></h4>
-            </p>
-        </form>
-    </div>
+        <div style="padding-left: 20%;padding-right: 20%; " class="werqwer">
+            <form method="POST">
+                <p>
+                    <h4><a href="{% url 'mainapp:post_create' %}" style="display: inline-block;background: #7b81f5;color: #fff;padding: 12px;margin-left: 10px; border: none;border-radius: 3px;text-decoration: none;font-family: Tahoma,serif;font-size: 18px;line-height: 1;font-weight: 100;cursor: pointer;">Verify account</a></h4>
+                </p>
+            </form>
+        </div>
     {% endif %}
 
 {% endblock %}
-
-<!--<h4 style="text-decoration: none; color: #333333;"><a href="{% url 'mainapp:post_create' %}" style="text-decoration: none; color: #333333;">✎ Make a note</a></h4>-->
-<!--<button type="submit" style="display: inline-block;background: #7b81f5;color: #fff;padding: 12px;margin-left: 10px; border: none;border-radius: 3px;text-decoration: none;font-family: Tahoma,serif;font-size: 18px;line-height: 1;font-weight: 100;cursor: pointer;">Verify</button>-->

@@ -54,8 +54,8 @@ def user_account(request):
         if request.user.is_admin:
             email = request.user
             user = User.objects.get(email=email)
-            user_products = Product.objects.all()  # filter(author=user).order_by('-id')[:5]
-            return render(request, 'users/profile.html', {'user': user, 'user_products': user_products})
+            products = Product.objects.filter(author=user)
+            return render(request, 'users/profile.html', {'user': user, 'products': products})
         else:
             email = request.user
             user = User.objects.get(email=email)
