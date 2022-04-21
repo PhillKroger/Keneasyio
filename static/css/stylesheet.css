@@ -1,8 +1,106 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+.social a {
+    text-align: center;
+    width: 48px;
+    height: 48px;
+    float: left;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);
+    border-radius: 24px;
+    margin: 0 10px 10px 0;
+    padding: 6px;
+    color: #05102c;
+}
+.social a {
+    text-align: center;
+    width: 48px;
+    height: 48px;
+    float: left;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);
+    border-radius: 24px;
+    margin: 0 10px 10px 0;
+    padding: 6px;
+    color: #05102c;
+}
+
+
+.vk a {background: #5d84ae; color: #fff;}
+.telegram a {background: #249bd7; color: #fff;}
+.whatsapp a {background: #50b154; color: #fff;}
+
+
+footer {
+  height: 40%;
+}
+
+.footer-left-el {
+  align: left;
+  float: left;
+  padding-left: 20px;
+
+}
+
+.footer-email {
+  font-family: 'Comfortaa', cursive;
+  color: white;
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.footer-soc-net-el {
+  float: left;
+  align:left;
+  padding: 5px;
+}
+
+.footer-table {
+  margin: auto;
+}
+
+.footer-el {
+  padding-left: 50%;
+  font-family: 'Comfortaa', cursive;
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+
+.all-right {
+  font-family: 'Comfortaa', cursive;
+  color: white;
+}
+
+.footer-el-1 {
+  padding-left: 50%;
+  font-family: 'Comfortaa', cursive;
+  text-align: center;
+  padding: 10px;
+  color: #B4E197;
+}
+.footer-el-2 {
+  padding-left: 50%;
+  font-family: 'Comfortaa', cursive;
+  text-align: center;
+  padding: 10px;
+  color: #B4E197;
+}
+.footer-el-3 {
+  padding-left: 50%;
+  font-family: 'Comfortaa', cursive;
+  text-align: center;
+  padding: 10px;
+  color: #B4E197;
+}
+
+.footer-um {
+
+}
+
 .user-create {
   text-decoration: none;
   color: #7b81f5;
-  float: left;
-
 
 }
 
@@ -16,13 +114,14 @@
 
 .user-products-count {
   font-family: 'Comfortaa', cursive;
-  background-color: #d8d8db;
+  background-color: #b4defc;
   border-radius: 30px;
   padding: 10px;
   margin-top: 10px;
-  margin-right: 90%;
+  margin-right: 10px;
   text-align: left;
-
+  float: left;
+  color: #000000;
 }
 
 
@@ -62,7 +161,7 @@
 .prd-d-2 {
     text-align: center;
     font-family: 'Comfortaa', cursive;
-    background-color: #30e57d;
+    background-color: #069A8E;
     color: white;
     border-radius: 30px;
     padding: 10px;

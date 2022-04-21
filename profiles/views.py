@@ -4,8 +4,7 @@ from django.shortcuts import redirect, render
 from django.shortcuts import render
 from profiles.forms import UserLoginForm, UserRegistrationForm
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
-from mainapp.models import Product
-from mainapp.models import Post
+from mainapp.models import *
 from django.conf import settings
 from django.contrib.auth import authenticate
 
@@ -55,7 +54,8 @@ def user_account(request):
             email = request.user
             user = User.objects.get(email=email)
             products = Product.objects.filter(author=user)
-            return render(request, 'users/profile.html', {'user': user, 'products': products})
+            sets = Set.objects.all()
+            return render(request, 'users/profile.html', {'user': user, 'products': products, 'sets': sets})
         else:
             email = request.user
             user = User.objects.get(email=email)

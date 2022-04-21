@@ -14,15 +14,13 @@
         <div class="main_div" style="padding-left: 20%;">
             <h1 class="nav__logo" style="float: left;">{{ user.username }}</h1><p class="verified-user">verified</p>
             <div style="clear: left"></div>
-            <p class="user-products-count">{{ products.count }} products</p>
+            <p class="user-products-count">{{ products.count }} products</p><p class="user-products-count">{{ sets.count }} sets</p>
             <div style="clear: left"></div><br>
+
              <h4><a href="http://127.0.0.1:8000/create_product/" class="user-create"> create product</a></h4>
             <h4><a href="http://127.0.0.1:8000/create_set/" class="user-create"> create set</a></h4>
             <br>
-
             <div style="clear: left"></div>
-
-
         </div>
 
         <div  class="all-prd">
@@ -65,5 +63,10 @@
             </form>
         </div>
     {% endif %}
+
+<br><br>
+<div style="clear: left">
+    <div style="clear: right">
+{% include 'footer.html' %}
 
 {% endblock %}

@@ -12,13 +12,12 @@
 
     <div class="grey_page">
 		{% include 'menu.html' %}
-    </div> <br><br><br><br>
+    </div> <br><br>
 
     <div class="post_form_div" style="padding-left: 20%;">
-        <h1 class="h1_post_create">Product create</h1><br><br>
+        <h1 class="h1_post_create">Product create</h1>
         <form method="post">
             {% csrf_token %}
-
             {{form}}
             <button type="submit" class="post_form_button">
                 <p class="text_button">Do it</p>
