@@ -17,12 +17,12 @@
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         {% if request.user.is_authenticated %}
-                            <li class="nav__item"><a href="http://127.0.0.1:8000/filter/" class="nav__link">filter</a></li>
+                            <li class="nav__item"><a href="http://127.0.0.1:8000/filter/" class="nav__link">products</a></li>
                             <li class="nav__item"><a href="http://127.0.0.1:8000/sets/" class="nav__link">sets</a></li>
                             <li class="nav__item"><a href="{% url 'profiles:profile' %}" class="nav__link">profile</a></li>
                             <li class="nav__item"><a href="{% url 'profiles:logout' %}" class="nav__link">logout</a></li>
                         {% else %}
-                            <li class="nav__item"><a href="http://127.0.0.1:8000/filter/" class="nav__link">filter</a></li>
+                            <li class="nav__item"><a href="http://127.0.0.1:8000/filter/" class="nav__link">products</a></li>
                             <li class="nav__item"><a href="{% url 'profiles:login' %}" class="nav__link">sign in</a></li>
                             <li class="nav__item"><a href="{% url 'profiles:register' %}" class="nav__link">sign up</a></li>
                         {% endif %}

@@ -60,6 +60,7 @@ def set_create(request):
 
     return render(request, 'sets/form.html', {'form': form})
 
+
 def sets(request):
     sets = Set.objects.all()
     page = request.GET.get('page', 1)
@@ -71,7 +72,7 @@ def sets(request):
     except EmptyPage:
         post_list = paginator.page(paginator.num_pages)
 
-    return render(request, 'products/filter_set.html', {'sets': post_list})
+    return render(request, 'products/filter_set.html', {'sets': sets})
 
 
 class ProductListView(ListView):
