@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c8a76bc6-98f7-49f0-ab0d-99db3fac8f38" name="Changes" comment="#" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="23ViBvf54mtP5AHuRf6JEUnyfaY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="discord-application" />
+    <property name="settings.editor.splitter.proportion" value="0.25865582" />
+  </component>
+  <component name="RunManager" selected="Python.main">
+    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\maxbo\AppData\Local\Programs\Python\Python310\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../pythonProject" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../pythonProject/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="models" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Keneasyio" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mainapp" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mainapp/models.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="views" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Keneasyio" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mainapp" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mainapp/views.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Keneasyio" type="Python.DjangoServer" factoryName="Django server">
+      <module name="Keneasyio" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Django Server.Keneasyio" />
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.manage" />
+      <item itemvalue="Python.models" />
+      <item itemvalue="Python.views" />
+      <item itemvalue="Python.main (1)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main (1)" />
+        <item itemvalue="Python.views" />
+        <item itemvalue="Python.models" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.manage" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c8a76bc6-98f7-49f0-ab0d-99db3fac8f38" name="Changes" comment="" />
+      <created>1641825523599</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1641825523599</updated>
+      <workItem from="1641825551690" duration="2126000" />
+      <workItem from="1641828491806" duration="10587000" />
+      <workItem from="1641919227617" duration="8989000" />
+      <workItem from="1641993539956" duration="7771000" />
+      <workItem from="1642084181088" duration="3035000" />
+      <workItem from="1642168443456" duration="988000" />
+      <workItem from="1642179879127" duration="1424000" />
+      <workItem from="1642181414135" duration="2903000" />
+      <workItem from="1642237162774" duration="594000" />
+      <workItem from="1642251702769" duration="596000" />
+      <workItem from="1642328061887" duration="9197000" />
+      <workItem from="1642360846320" duration="880000" />
+      <workItem from="1642430174428" duration="9089000" />
+      <workItem from="1642529421721" duration="284000" />
+      <workItem from="1642532188687" duration="4501000" />
+      <workItem from="1642680790147" duration="3569000" />
+      <workItem from="1642685034543" duration="8711000" />
+      <workItem from="1642698456247" duration="68000" />
+      <workItem from="1642700954575" duration="1034000" />
+      <workItem from="1642864821128" duration="7932000" />
+      <workItem from="1642917728118" duration="1325000" />
+      <workItem from="1642919330984" duration="3728000" />
+      <workItem from="1642924680146" duration="21152000" />
+      <workItem from="1642962484298" duration="4363000" />
+      <workItem from="1643006832658" duration="4034000" />
+      <workItem from="1643035924596" duration="415000" />
+      <workItem from="1643096263454" duration="1124000" />
+      <workItem from="1643100463125" duration="617000" />
+      <workItem from="1643110954728" duration="897000" />
+      <workItem from="1643208101628" duration="117000" />
+      <workItem from="1643208246371" duration="5150000" />
+      <workItem from="1643225151320" duration="13000" />
+      <workItem from="1643447329069" duration="10646000" />
+      <workItem from="1643481530078" duration="684000" />
+      <workItem from="1643487546847" duration="1324000" />
+      <workItem from="1643527530815" duration="14000" />
+      <workItem from="1643622614486" duration="963000" />
+      <workItem from="1643645769350" duration="130000" />
+      <workItem from="1643649925505" duration="5000" />
+      <workItem from="1643720885945" duration="1904000" />
+      <workItem from="1643896103561" duration="2047000" />
+      <workItem from="1643990857702" duration="760000" />
+      <workItem from="1644046958325" duration="594000" />
+      <workItem from="1644338960610" duration="1079000" />
+      <workItem from="1644349152681" duration="667000" />
+      <workItem from="1644421757566" duration="962000" />
+      <workItem from="1644422974247" duration="10788000" />
+      <workItem from="1644469722898" duration="8403000" />
+      <workItem from="1644484279764" duration="3938000" />
+      <workItem from="1644517807778" duration="3032000" />
+      <workItem from="1644522123710" duration="48000" />
+      <workItem from="1644523339345" duration="56000" />
+      <workItem from="1644610253669" duration="619000" />
+      <workItem from="1644613205785" duration="20000" />
+      <workItem from="1644648654739" duration="4638000" />
+      <workItem from="1644694110250" duration="637000" />
+      <workItem from="1644750877373" duration="328000" />
+      <workItem from="1644756549514" duration="722000" />
+      <workItem from="1644758575399" duration="92000" />
+      <workItem from="1644758800863" duration="7060000" />
+      <workItem from="1644772160415" duration="931000" />
+      <workItem from="1644781609358" duration="943000" />
+      <workItem from="1644994537358" duration="18000" />
+      <workItem from="1644996357891" duration="1103000" />
+      <workItem from="1645015985536" duration="1494000" />
+      <workItem from="1645019863915" duration="351000" />
+      <workItem from="1645862383348" duration="2966000" />
+      <workItem from="1645874433074" duration="595000" />
+      <workItem from="1645882875183" duration="2522000" />
+      <workItem from="1646162031862" duration="1510000" />
+      <workItem from="1646195961266" duration="1202000" />
+      <workItem from="1646570242376" duration="27000" />
+      <workItem from="1646570273980" duration="1242000" />
+      <workItem from="1646571730052" duration="5260000" />
+      <workItem from="1646634196457" duration="9709000" />
+      <workItem from="1646724055483" duration="6870000" />
+      <workItem from="1646740468442" duration="5363000" />
+      <workItem from="1646751745963" duration="3240000" />
+      <workItem from="1646755563007" duration="1235000" />
+      <workItem from="1646885967393" duration="353000" />
+      <workItem from="1647010537634" duration="282000" />
+      <workItem from="1647088363280" duration="1288000" />
+      <workItem from="1647160410119" duration="162000" />
+      <workItem from="1647191321295" duration="245000" />
+      <workItem from="1647193655030" duration="2240000" />
+      <workItem from="1647263464413" duration="599000" />
+      <workItem from="1647268859662" duration="877000" />
+      <workItem from="1647276120987" duration="10015000" />
+      <workItem from="1647358106252" duration="29000" />
+      <workItem from="1647538264661" duration="816000" />
+      <workItem from="1647713405570" duration="1980000" />
+      <workItem from="1647759487650" duration="5461000" />
+      <workItem from="1648888982284" duration="876000" />
+      <workItem from="1649077672095" duration="32000" />
+      <workItem from="1649250986118" duration="1849000" />
+      <workItem from="1650270706887" duration="4583000" />
+      <workItem from="1650392039899" duration="1884000" />
+      <workItem from="1650427914701" duration="3555000" />
+      <workItem from="1650460359269" duration="81000" />
+      <workItem from="1650464030045" duration="2893000" />
+      <workItem from="1650474362978" duration="5401000" />
+      <workItem from="1650513363322" duration="1093000" />
+      <workItem from="1650526696336" duration="11926000" />
+      <workItem from="1650540358810" duration="18913000" />
+      <workItem from="1650599497124" duration="5246000" />
+      <workItem from="1650737553503" duration="30000" />
+      <workItem from="1650779839397" duration="9360000" />
+    </task>
+    <task id="LOCAL-00020" summary="#">
+      <created>1642943787056</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1642943787056</updated>
+    </task>
+    <task id="LOCAL-00021" summary="#">
+      <created>1642944122912</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1642944122912</updated>
+    </task>
+    <task id="LOCAL-00022" summary="#">
+      <created>1642944614770</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1642944614770</updated>
+    </task>
+    <task id="LOCAL-00023" summary="#">
+      <created>1642953079123</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1642953079123</updated>
+    </task>
+    <task id="LOCAL-00024" summary="#">
+      <created>1642962575686</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1642962575687</updated>
+    </task>
+    <task id="LOCAL-00025" summary="#">
+      <created>1643096310193</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1643096310193</updated>
+    </task>
+    <task id="LOCAL-00026" summary="#">
+      <created>1643110993919</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1643110993919</updated>
+    </task>
+    <task id="LOCAL-00027" summary="#">
+      <created>1643116336553</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1643116336554</updated>
+    </task>
+    <task id="LOCAL-00028" summary="#">
+      <created>1643461288583</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1643461288583</updated>
+    </task>
+    <task id="LOCAL-00029" summary="#">
+      <created>1643462394311</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1643462394312</updated>
+    </task>
+    <task id="LOCAL-00030" summary="#">
+      <created>1643463008012</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1643463008012</updated>
+    </task>
+    <task id="LOCAL-00031" summary="#">
+      <created>1643463028314</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1643463028314</updated>
+    </task>
+    <task id="LOCAL-00032" summary="#">
+      <created>1643464895972</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1643464895972</updated>
+    </task>
+    <task id="LOCAL-00033" summary="#">
+      <created>1643465056085</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1643465056085</updated>
+    </task>
+    <task id="LOCAL-00034" summary="#">
+      <created>1643645869983</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1643645869983</updated>
+    </task>
+    <task id="LOCAL-00035" summary="#">
+      <created>1644339375598</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1644339375598</updated>
+    </task>
+    <task id="LOCAL-00036" summary="#">
+      <created>1644521911966</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1644521911966</updated>
+    </task>
+    <task id="LOCAL-00037" summary="#">
+      <created>1644523378379</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1644523378379</updated>
+    </task>
+    <task id="LOCAL-00038" summary="#">
+      <created>1644651331573</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1644651331573</updated>
+    </task>
+    <task id="LOCAL-00039" summary="#">
+      <created>1644651531650</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1644651531650</updated>
+    </task>
+    <task id="LOCAL-00040" summary="#">
+      <created>1644651687351</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1644651687352</updated>
+    </task>
+    <task id="LOCAL-00041" summary="make model set and view for returning all sets in db">
+      <created>1644760155003</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1644760155003</updated>
+    </task>
+    <task id="LOCAL-00042" summary="#">
+      <created>1644760651413</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1644760651413</updated>
+    </task>
+    <task id="LOCAL-00043" summary="#">
+      <created>1644760845221</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1644760845221</updated>
+    </task>
+    <task id="LOCAL-00044" summary="#">
+      <created>1644765601048</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1644765601048</updated>
+    </task>
+    <task id="LOCAL-00045" summary="#">
+      <created>1644779339534</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1644779339534</updated>
+    </task>
+    <task id="LOCAL-00046" summary="#">
+      <created>1646576628269</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1646576628269</updated>
+    </task>
+    <task id="LOCAL-00047" summary="#">
+      <created>1646576839153</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1646576839153</updated>
+    </task>
+    <task id="LOCAL-00048" summary="#">
+      <created>1646577014653</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1646577014653</updated>
+    </task>
+    <task id="LOCAL-00049" summary="#">
+      <created>1646577824617</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1646577824617</updated>
+    </task>
+    <task id="LOCAL-00050" summary="#">
+      <created>1646644619754</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1646644619755</updated>
+    </task>
+    <task id="LOCAL-00051" summary="#">
+      <created>1646727124226</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1646727124226</updated>
+    </task>
+    <task id="LOCAL-00052" summary="#">
+      <created>1647269004983</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1647269004985</updated>
+    </task>
+    <task id="LOCAL-00053" summary="#">
+      <created>1647276691524</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1647276691524</updated>
+    </task>
+    <task id="LOCAL-00054" summary="#">
+      <created>1647277654103</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1647277654103</updated>
+    </task>
+    <task id="LOCAL-00055" summary="#">
+      <created>1647280260658</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1647280260658</updated>
+    </task>
+    <task id="LOCAL-00056" summary="#">
+      <created>1647287251299</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1647287251299</updated>
+    </task>
+    <task id="LOCAL-00057" summary="#">
+      <created>1650280696055</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1650280696056</updated>
+    </task>
+    <task id="LOCAL-00058" summary="#">
+      <created>1650280876195</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1650280876195</updated>
+    </task>
+    <task id="LOCAL-00059" summary="#">
+      <created>1650281043683</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1650281043683</updated>
+    </task>
+    <task id="LOCAL-00060" summary="#">
+      <created>1650281163513</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1650281163514</updated>
+    </task>
+    <task id="LOCAL-00061" summary="#">
+      <created>1650431465847</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1650431465848</updated>
+    </task>
+    <task id="LOCAL-00062" summary="#">
+      <created>1650466865941</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1650466865943</updated>
+    </task>
+    <task id="LOCAL-00063" summary="#">
+      <created>1650481303873</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1650481303876</updated>
+    </task>
+    <task id="LOCAL-00064" summary="#">
+      <created>1650483808477</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1650483808477</updated>
+    </task>
+    <task id="LOCAL-00065" summary="#">
+      <created>1650538257809</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1650538257811</updated>
+    </task>
+    <task id="LOCAL-00066" summary="#">
+      <created>1650569050906</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1650569050909</updated>
+    </task>
+    <task id="LOCAL-00067" summary="#">
+      <created>1650604514598</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1650604514599</updated>
+    </task>
+    <task id="LOCAL-00068" summary="#">
+      <created>1650791585156</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1650791585158</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="make model set and view for returning all sets in db" />
+    <MESSAGE value="make model (Set) and view for returning all sets from db" />
+    <MESSAGE value="#" />
+    <option name="LAST_COMMIT_MESSAGE" value="#" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Keneasyio$views.coverage" NAME="views Coverage Results" MODIFIED="1644426527927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mainapp" />
+    <SUITE FILE_PATH="coverage/Keneasyio$main.coverage" NAME="main Coverage Results" MODIFIED="1642361683014" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
+    <SUITE FILE_PATH="coverage/Keneasyio$filters.coverage" NAME="filters Coverage Results" MODIFIED="1642341296217" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mainapp" />
+    <SUITE FILE_PATH="coverage/Keneasyio$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1646197169090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../pythonProject" />
+    <SUITE FILE_PATH="coverage/Keneasyio$models.coverage" NAME="models Coverage Results" MODIFIED="1641837249864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mainapp" />
+  </component>
+</project>
