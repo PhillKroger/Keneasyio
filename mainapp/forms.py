@@ -34,19 +34,17 @@ class ProductForm(forms.ModelForm):
 
 
 class SetForm(forms.ModelForm):
-    name = forms.CharField()
-    """
-    label='Set name', widget=forms.TextInput(attrs={'class': 'post_form_title', 'id': 'post_form_title_label'})
-    """
-    # Post.objects.filter(author=user)
-    product1 = forms.ModelChoiceField(queryset=Product.objects.all())
-    product2 = forms.ModelChoiceField(queryset=Product.objects.all())
-    product3 = forms.ModelChoiceField(queryset=Product.objects.all())
-    product4 = forms.ModelChoiceField(queryset=Product.objects.all())
-    product5 = forms.ModelChoiceField(queryset=Product.objects.all())
+
+    name = forms.CharField(initial="Введите название сета")
+    product1 = forms.ModelChoiceField(label='Set product 1', queryset=Product.objects.all())
+    #product2 = forms.ModelChoiceField(label='Set product 2', queryset=Product.objects.all())
+    #product3 = forms.ModelChoiceField(label='Set product 3', queryset=Product.objects.all())
+    #product4 = forms.ModelChoiceField(label='Set product 4', queryset=Product.objects.all())
+
+    # product5 = forms.ModelChoiceField(queryset=Product.objects.all())
     #product5 = forms.ModelChoiceField(queryset=Product.objects.all())
 
     class Meta:
         model = Set
-        fields = ('name', 'product1', 'product2', 'product3', 'product4', 'product5', )
+        fields = ('name', 'product1' ) #, 'product2', 'product3', 'product4'
 

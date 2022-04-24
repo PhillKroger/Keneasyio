@@ -12,5 +12,6 @@ urlpatterns = [
     path('product_create/', views.product_create, name='product_create'),
     path('create_product/', views.product_create, name='product_create'),
     path('create_set/', views.set_create, name='set_create'),
+    #path('mainapp/<slug:slug>/', PostDetailView.as_view(), name='post-detail'),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
