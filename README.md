@@ -2,6 +2,7 @@
 
 `Introduction`
 
+
 ```
 The modern world provides a huge variety of different products, goods and services.
 This is especially noticeable when we go to shopping centers or online stores.
