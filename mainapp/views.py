@@ -1,6 +1,6 @@
 from django.contrib.auth.models import User
 from django.shortcuts import render
-from django.views.generic import ListView
+from django.views.generic import ListView, DetailView
 from .filters import ProductFilter
 from .models import Product, CategoryPrice
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
@@ -10,9 +10,24 @@ import datetime
 from .models import *
 
 
+def post(request, post_id):
+    try:
+        product = Product.objects.get(id=post_id)
+    except:
+        raise Http404("Пост не найден!")
+    if request.META.get('HTTP_REFERER') == 'http://127.0.0.1:8000/news' + str(post_id) + '/':
+        pass
+    else:
+        request.session['return_path'] = request.META.get('HTTP_REFERER', '/')
+
+    return render(request, 'products/product_detail.html', {"product": product})
+
+
 def mainapp(request):
     return render(request, "mainapp/index.html")
 
+def about(request):
+    return render(request, "mainapp/about.html")
 
 def about(request):
     return render(request, 'mainapp/about.html')
@@ -97,6 +112,3 @@ class ProductListView(ListView):
         c['filter'] = ProductFilter(self.request.GET, queryset=self.get_queryset())
         return c
 
-
-class ProductDetailView(DetailView):
-    model = Product

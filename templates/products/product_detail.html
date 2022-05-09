@@ -10,6 +10,27 @@
 
 {% block content %}
 
-
+<div class="prd-slot">
+                    <img src="{{ product.category_clothes.img.url }}" alt="" class="prd-img">
+                    <table>
+                        <tr>
+                            <td><p class="prd-d">Season </p></td>
+                            <td><p class="prd-d-1"> {{ product.category_season }} </p></td>
+                        </tr>
+                        <tr>
+                            <td><p class="prd-d">Model</p></td>
+                            <td><p class="prd-d-2">{{ product.category_clothes }}</p></td>
+                        </tr>
+                        <tr>
+                            <td><p class="prd-d">Size</p></td>
+                            <td><p class="prd-d-3"> {{ product.category_size }}   </p></td>
+                        </tr>
+                        <tr>
+                            <td><p class="prd-d">Price</p></td>
+                            <td><p class="prd-d-4">{{ product.category_price }}  </p></td>
+                        </tr>
+                    </table>
+                    <p class="btn-third"><b style="text-align: center;">В корзину</b></p>
+                </div>
 
 {% endblock %}
