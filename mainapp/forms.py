@@ -18,6 +18,17 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'email', 'text',)
 
 
+class ContactForm(forms.ModelForm):
+
+    text = forms.CharField(
+        label='Само обращение к администрации сайта',
+        widget=CKEditorWidget(attrs={'class': 'post_form_text', 'id': 'post_form_text_label'}))
+    title = forms.CharField(label='Название')
+    class Meta:
+        model = Post
+        fields = ('text', 'title',)
+
+
 class ProductForm(forms.ModelForm):
     category_season = forms.ModelChoiceField(queryset=CategorySeason.objects.all())
     category_clothes = forms.ModelChoiceField(queryset=CategoryClothes.objects.all())

@@ -4,7 +4,7 @@ from django.views.generic import ListView, DetailView
 from .filters import ProductFilter
 from .models import Product, CategoryPrice
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
-from .forms import PostForm, ProductForm, SetForm
+from .forms import PostForm, ProductForm, SetForm, ContactForm
 from django.shortcuts import render, redirect
 import datetime
 from .models import *
@@ -25,6 +25,22 @@ def post(request, post_id):
 
 def mainapp(request):
     return render(request, "mainapp/index.html")
+
+
+def contact_us(request):
+    form = ContactForm(request.POST or None)
+    if request.method == 'POST':
+
+        if form.is_valid():
+            contact = form.save(commit=False)
+            contact.author = request.user
+            contact.pubdate = datetime.datetime.now()
+            contact.save()
+            form = ContactForm()
+            return redirect('/profile/')
+
+    return render(request, 'mainapp/contact_us.html', {'form': form})
+
 
 def about(request):
     return render(request, "mainapp/about.html")

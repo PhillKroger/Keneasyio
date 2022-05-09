@@ -2,18 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8a76bc6-98f7-49f0-ab0d-99db3fac8f38" name="Changes" comment="#">
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/mainapp/contact_us.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mainapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainapp/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mainapp/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainapp/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mainapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainapp/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mainapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainapp/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mainapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainapp/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/stylesheet.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/mainapp/3 вариант.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/mainapp/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mainapp/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/mainapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mainapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/products/filter.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/products/filter.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/products/product_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/products/product_detail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +30,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -334,14 +331,7 @@
       <workItem from="1650799613726" duration="1338000" />
       <workItem from="1650817260115" duration="719000" />
       <workItem from="1650821934026" duration="313000" />
-      <workItem from="1652081370532" duration="4597000" />
-    </task>
-    <task id="LOCAL-00020" summary="#">
-      <created>1642943787056</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1642943787056</updated>
+      <workItem from="1652081370532" duration="5237000" />
     </task>
     <task id="LOCAL-00021" summary="#">
       <created>1642944122912</created>
@@ -679,7 +669,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650791585158</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="#">
+      <created>1652087072871</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1652087072871</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -93,3 +93,14 @@ class Set(models.Model):
         verbose_name_plural = "Sets"
 
 
+class Contact(models.Model):
+    title = models.CharField("Title", max_length=50, null=True)
+    text = RichTextField("Text", null=True)
+    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = "Contact"
+        verbose_name_plural = "Contacts"

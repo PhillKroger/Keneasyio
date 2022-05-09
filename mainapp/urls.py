@@ -15,4 +15,5 @@ urlpatterns = [
     #path('mainapp/<slug:slug>/', PostDetailView.as_view(), name='post-detail'),
     path('post/<int:post_id>/', views.post, name="post"),
     path('about/', views.about, name='about'),
+    path('contact_us/', views.contact_us, name='contact_us'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

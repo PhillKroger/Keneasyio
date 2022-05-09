@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+<title>
+    {% block title %}
+        Contact us
+    {% endblock %}
+</title>
+
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+{% block content %}
+
+    <div class="grey_page">
+
+    </div> <br><br>
+
+    <div class="post_form_div" style="padding-left: 20%;">
+        <h1 class="h1_post_create">Отправьте сообщение</h1><br>
+        <form method="post"><br>
+            {% csrf_token %}<br>
+            {{form}}<br>
+            <button type="submit" class="post_form_button"><br>
+                <p class="text_button">Do it</p>
+            </button>
+        </form>
+    </div>
+
+{% endblock %}

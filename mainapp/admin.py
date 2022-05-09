@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import CategorySeason, CategoryClothes, CategorySize, CategoryPrice, CategoryImage, Product, Post, Set
+from .models import CategorySeason, CategoryClothes, CategorySize, CategoryPrice, CategoryImage, Product, Post, Set, Contact
 
 
 admin.site.register(CategorySeason)
@@ -10,3 +10,4 @@ admin.site.register(CategoryImage)
 admin.site.register(Product)
 admin.site.register(Post)
 admin.site.register(Set)
+admin.site.register(Contact)
