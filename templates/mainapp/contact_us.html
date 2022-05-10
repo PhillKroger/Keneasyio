@@ -9,20 +9,25 @@
 <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 
 {% block content %}
+    {% if user.is_authenticate %}
+        <div class="grey_page">
 
-    <div class="grey_page">
+        </div> <br><br>
 
-    </div> <br><br>
-
-    <div class="post_form_div" style="padding-left: 20%;">
-        <h1 class="h1_post_create">Отправьте сообщение</h1><br>
-        <form method="post"><br>
-            {% csrf_token %}<br>
-            {{form}}<br>
-            <button type="submit" class="post_form_button"><br>
-                <p class="text_button">Do it</p>
-            </button>
-        </form>
-    </div>
+        <div class="post_form_div" style="padding-left: 20%;">
+            <h1 class="h1_post_create">Отправьте сообщение</h1><br>
+            <form method="post"><br>
+                {% csrf_token %}<br>
+                {{form}}<br>
+                <button type="submit" class="post_form_button"><br>
+                    <p class="text_button">Do it</p>
+                </button>
+            </form>
+        </div>
+    {% else %}
+        <br><br><br><br>
+        <h1 style="padding-bottom: 100px; padding-left: 30%; padding-right: 30%">Для отправки сообщения требуется регистрация на сайте. Просьба зарегистрироваться на сайте и зайти в аккаунт</h1>
+<br><br><br><br><br><br><br><br><br><br>
+    {% endif %}
 
 {% endblock %}

@@ -3,8 +3,43 @@
   <component name="ChangeListManager">
     <list default="true" id="c8a76bc6-98f7-49f0-ab0d-99db3fac8f38" name="Changes" comment="#">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/mainapp/img1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/mainapp/img2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/10fc94935e1e0679eec3a30b4d9b5c3d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/fdf518570fbd40f463fb1330390d52df.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/park-tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/media/2022-04-21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/media/2022-04-21_4wQySfy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/media/2022-04-21_MwhYvoD.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/media/2022-04-21_PPYtEAq.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/media/GuYDB.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/media/WhatsApp_Image_2022-04-11_at_20.39.51.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/media/alyssa-strohmann-TS--uNw-JqE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/media/categories/jacket.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/media/categories/pants.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/media/categories/shoes.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/media/categories/t-short.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/media/category_image/2022-02-26_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/media/category_image/2022-02-26_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/media/category_image/2022-02-26_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/media/category_image/2022-04-21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/media/category_image/jacket.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/media/category_image/jacket_jKTlbUj.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/media/category_image/pants.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/media/category_image/pants_tSAYMuM.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/media/category_image/shoes.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/media/category_image/shoes_hXhYnb4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/media/category_image/t-shirt.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/media/category_image/t-shirt_YQAkgDN.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/media/category_image/t-shirt_YQAkgDN_U38ZPhI.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/media/docx/2906_original.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/media/maxresdefault.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/media/maxresdefault_3qVwn48.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/media/maxresdefault_Ua4GI2Z.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/media/maxresdefault_pymCbEH.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/media/Электростатика.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/mainapp/contact_us.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mainapp/contact_us.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/products/filter.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/products/filter.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -326,14 +361,8 @@
       <workItem from="1650799613726" duration="1338000" />
       <workItem from="1650817260115" duration="719000" />
       <workItem from="1650821934026" duration="313000" />
-      <workItem from="1652081370532" duration="6346000" />
-    </task>
-    <task id="LOCAL-00022" summary="#">
-      <created>1642944614770</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1642944614770</updated>
+      <workItem from="1652081370532" duration="7165000" />
+      <workItem from="1652185763567" duration="1995000" />
     </task>
     <task id="LOCAL-00023" summary="#">
       <created>1642953079123</created>
@@ -671,7 +700,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652087902890</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="#">
+      <created>1652088858517</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1652088858517</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
