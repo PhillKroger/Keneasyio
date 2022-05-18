@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8a76bc6-98f7-49f0-ab0d-99db3fac8f38" name="Changes" comment="#" />
+    <list default="true" id="c8a76bc6-98f7-49f0-ab0d-99db3fac8f38" name="Changes" comment="#">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -326,21 +329,7 @@
       <workItem from="1652081370532" duration="7165000" />
       <workItem from="1652185763567" duration="4539000" />
       <workItem from="1652540735103" duration="735000" />
-      <workItem from="1652859043357" duration="4456000" />
-    </task>
-    <task id="LOCAL-00030" summary="#">
-      <created>1643463008012</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1643463008012</updated>
-    </task>
-    <task id="LOCAL-00031" summary="#">
-      <created>1643463028314</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1643463028314</updated>
+      <workItem from="1652859043357" duration="7502000" />
     </task>
     <task id="LOCAL-00032" summary="#">
       <created>1643464895972</created>
@@ -671,7 +660,21 @@
       <option name="project" value="LOCAL" />
       <updated>1652863408608</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="#">
+      <created>1652864781717</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1652864781717</updated>
+    </task>
+    <task id="LOCAL-00080" summary="f-problem-#2">
+      <created>1652866292917</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1652866292918</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -692,7 +695,8 @@
     <MESSAGE value="make model set and view for returning all sets in db" />
     <MESSAGE value="make model (Set) and view for returning all sets from db" />
     <MESSAGE value="#" />
-    <option name="LAST_COMMIT_MESSAGE" value="#" />
+    <MESSAGE value="f-problem-#2" />
+    <option name="LAST_COMMIT_MESSAGE" value="f-problem-#2" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Keneasyio$views.coverage" NAME="views Coverage Results" MODIFIED="1644426527927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mainapp" />
