@@ -1,7 +1,7 @@
+from django.conf.urls.static import static
+from django.conf import settings
 from django.urls import path
 from . import views
-from django.conf import settings
-from django.conf.urls.static import static
 
 urlpatterns = [
     path('', views.mainapp, name="mainapp"),
@@ -12,7 +12,6 @@ urlpatterns = [
     path('product_create/', views.product_create, name='product_create'),
     path('create_product/', views.product_create, name='product_create'),
     path('create_set/', views.set_create, name='set_create'),
-    #path('mainapp/<slug:slug>/', PostDetailView.as_view(), name='post-detail'),
     path('post/<int:post_id>/', views.post, name="post"),
     path('about/', views.about, name='about'),
     path('contact_us/', views.contact_us, name='contact_us'),

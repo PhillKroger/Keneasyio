@@ -1,11 +1,11 @@
 from django.contrib.auth.models import User
 from django.shortcuts import render
 from django.views.generic import ListView, DetailView
-from .filters import ProductFilter
-from .models import Product, CategoryPrice
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
-from .forms import PostForm, ProductForm, SetForm, ContactForm
 from django.shortcuts import render, redirect
+
+from .filters import ProductFilter
+from .forms import PostForm, ProductForm, SetForm, ContactForm
 import datetime
 from .models import *
 
@@ -14,12 +14,11 @@ def post(request, post_id):
     try:
         product = Product.objects.get(id=post_id)
     except:
-        raise Http404("Пост не найден!")
+        raise Http404("No Post!")
     if request.META.get('HTTP_REFERER') == 'http://127.0.0.1:8000/news' + str(post_id) + '/':
         pass
     else:
         request.session['return_path'] = request.META.get('HTTP_REFERER', '/')
-
     return render(request, 'products/product_detail.html', {"product": product})
 
 
@@ -44,9 +43,6 @@ def contact_us(request):
 
 def about(request):
     return render(request, "mainapp/about.html")
-
-def about(request):
-    return render(request, 'mainapp/about.html')
 
 
 def post_create(request):
@@ -127,4 +123,3 @@ class ProductListView(ListView):
         c = super().get_context_data(**kwargs)
         c['filter'] = ProductFilter(self.request.GET, queryset=self.get_queryset())
         return c
-
