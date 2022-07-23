@@ -1,7 +1,7 @@
 # Keneasyio
 
->> Hooray 🙌<br>
->> This project won the digitalstart-2022 competition in the nomination "web development"<br>
+> Hooray 🙌<br>
+> This project won the digitalstart-2022 competition in the nomination "web development"<br>
 
 
 Introduction
