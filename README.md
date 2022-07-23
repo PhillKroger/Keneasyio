@@ -64,7 +64,7 @@ The owners of such stores rarely deal with online sales,<br>
 but taking into account all possible predictions, based on the already known <br>
 we can tell the statistics that there is a need for the development of “secondary fashion” stores.<br>
 
-![image](https://user-images.githubusercontent.com/66637696/177032399-e9420544-e25e-4d89-9024-d17bce90cf8a.png)
+![image](https://user-images.githubusercontent.com/66637696/177032399-e9420544-e25e-4d89-9024-d17bce90cf8a.png)<br>
 ![image](https://user-images.githubusercontent.com/66637696/177032466-0ca647ab-e028-47bd-a045-3f544f08a5f3.png)
 
 
